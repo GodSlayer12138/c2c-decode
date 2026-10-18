@@ -2,7 +2,7 @@
 
 [中文版](profiling-results.zh-CN.md)
 
-2026-10-17, RTX 4090 24GB, BF16, pinned Qwen3-4B → Qwen3-0.6B and the official pretrained Fuser. This round covers CPU/CUDA timelines, operators, KV import optimization, memory lifecycle and mixed-arrival scheduling. [Measurement summary](../results/profiling/summary.md) is generated from raw JSON.
+2026-10-17, RTX 4090 24GB, BF16, pinned Qwen3-4B → Qwen3-0.6B and the official pretrained Fuser. Profiling covers CPU/CUDA timelines, operators, KV import optimization, memory lifecycle and mixed-arrival scheduling. [Measurement summary](../results/profiling/summary.md) is generated from raw JSON.
 
 ![Performance and memory overview](../results/profiling/overview.png)
 
@@ -28,7 +28,7 @@ The old adapter copies per layer and physical page. The new adapter constructs t
 
 A separate 2K/B8 import trace reduces kernel count **3592 → 488**: 3584 page copies become 448 layer writes, plus indexing/first-token work. This supports the diagnosis of excessive small kernels and host launches. Effective payload GB/s counts KV size once, not physical DRAM traffic.
 
-Tests add fragmented pages, partial tails, untouched slots and both import modes; 22 tests passed in this round. Official fused-continuation logits, matched-history teacher forcing, free greedy and reclamation were rerun. Tokens matching across import modes does not establish strict engine/official token equivalence; BF16 differences remain subject to the original numerical thresholds and top-1 reporting.
+Tests add fragmented pages, partial tails, untouched slots and both import modes; 22 tests passed in the import experiment. Official fused-continuation logits, matched-history teacher forcing, free greedy and reclamation were rerun. Tokens matching across import modes does not establish strict engine/official token equivalence; BF16 differences remain subject to the original numerical thresholds and top-1 reporting.
 
 ## 3. Memory lifecycle
 
@@ -36,7 +36,7 @@ The measured setup is **one process with official C2C, nano CUDA Graph and a 204
 
 The 1K, 2K, repeated-2K sequence checks whether live allocated returns to its resident value and reserved reflects allocator caching. Import writes into a preallocated pool while HF fused KV stays live until handoff deletion. Each request also checks that official `kv_cache_dict` is empty and paged requests are released.
 
-Resident live allocated is **12.732GiB**; the cumulative 2K peak is **15.603GiB**. All three requests return to the same resident level after dropping handoff. Repeated-2K reserved stabilizes at **15.775GiB**, falling to **12.807GiB** after explicit `empty_cache`. These runs show allocator retention, without accumulating live tensors. Each model creates BF16 logits of shape `[1,2047,151936]` at the end of 2K prefix forward, about **593.2MiB** each. Clean KV clones and fusion intermediates also contribute, so weights+pool alone underestimate peaks. This round retains full official logits to preserve the reference.
+Resident live allocated is **12.732GiB**; the cumulative 2K peak is **15.603GiB**. All three requests return to the same resident level after dropping handoff. Repeated-2K reserved stabilizes at **15.775GiB**, falling to **12.807GiB** after explicit `empty_cache`. These runs show allocator retention, without accumulating live tensors. Each model creates BF16 logits of shape `[1,2047,151936]` at the end of 2K prefix forward, about **593.2MiB** each. Clean KV clones and fusion intermediates also contribute, so weights+pool alone underestimate peaks. This memory experiment retains full official logits to preserve the reference.
 
 See [memory.json](../results/profiling/memory.json) and the summary for exact GiB, shapes, dtypes and bytes. Allocated, reserved and driver usage are distinct. Limited repetitions do not prove indefinite leak freedom. Snapshot collection follows [PyTorch CUDA memory documentation](https://docs.pytorch.org/docs/2.8/torch_cuda_memory.html). GC and stack tracking perturb timing; the memory chart's time axis cannot establish prefill speedup.
 
@@ -56,7 +56,7 @@ P50/P95/P99 are provided for TTFT, queue, E2E, request TPOT and token intervals.
 
 The independent official producer uses same-GPU CUDA IPC, a 2044MiB pool, 1K/2K inputs, B1/2/4/8 with 32 outputs and supplementary B1/128-output runs. Five warmed repetitions per configuration cover free greedy and matched-history teacher forcing. E2E includes IPC and cannot be directly subtracted from in-process timings.
 
-2K/B8 import+decode takes **143.07ms** free greedy and **145.88ms** matched history. B1 fresh-request E2E is **244.77ms at 1K / 331.19ms at 2K**. The 100 decode and ten E2E records pass the original numerical validation set, KV and reclamation checks. Expanded tasks still have threshold failures, documented in round two; universal strict equivalence is not claimed.
+2K/B8 import+decode takes **143.07ms** free greedy and **145.88ms** matched history. B1 fresh-request E2E is **244.77ms at 1K / 331.19ms at 2K**. The 100 decode and ten E2E records pass the original numerical validation set, KV and reclamation checks. Expanded tasks still have threshold failures, documented in the performance and correctness evaluation; universal strict equivalence is not claimed.
 
 Loading, compilation, tokenization and HTTP are excluded from warmed timing. Original nano data remains unchanged; the current entry is `nano_benchmark.py`. Historical argument fields and trace stacks retain measurement-time values.
 

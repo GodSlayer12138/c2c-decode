@@ -45,7 +45,7 @@ def main():
     assert http["queue_full_status"] == 429 and not http["engine_error"] and http["disconnect_retired"]
     assert http["cancel_stream"]["reason"] == "cancelled" and http["timeout_stream"]["reason"] == "timeout"
     assert http["free_blocks_after"] == soak["free_blocks_after"] == 73 and soak["reasons"]["error"] == 0
-    lines = ["# Follow-up optimization measurements", "", "RTX 4090, BF16, unchanged pinned Qwen3 pair and trained C2C Fuser. All speed measurements have PyTorch Profiler disabled.", "",
+    lines = ["# System configuration measurements", "", "RTX 4090, BF16, unchanged pinned Qwen3 pair and trained C2C Fuser. All speed measurements have PyTorch Profiler disabled.", "",
         "## Producer: randomized mode order, 5 repetitions", "", "Memory peaks below include official producer models/Fuser only, without nano receiver or its KV pool.", ""]
     modes = ["official", "lean", "chunk-256", "chunk-512", "chunk-1024"]
     table(lines, ["Input", "Mode", "Median prefill ms", "Peak allocated GiB", "Validation cases", "Exact KV cases"],
@@ -173,7 +173,7 @@ def main():
         ax.annotate(s["mode"],(s["tokens_per_s"],s["ttft_p99"]),fontsize=8,xytext=offset,textcoords="offset points")
     ax.margins(x=.12,y=.12)
     ax.set(xlabel="Aggregate throughput (tokens/s)",ylabel="P99 TTFT (ms)",title="Burst: lower token gaps can cost throughput")
-    fig.suptitle("C2C-Decode follow-up experiments | RTX 4090 | BF16",fontsize=15)
+    fig.suptitle("C2C-Decode system evaluation | RTX 4090 | BF16",fontsize=15)
     fig.savefig(ROOT/"overview.png",dpi=170)
     fig.savefig(ROOT/"overview.svg")
     plt.close(fig)

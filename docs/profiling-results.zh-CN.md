@@ -3,7 +3,7 @@
 [English](profiling-results.md)
 
 2026-10-17，RTX 4090 24GB，BF16，固定 Qwen3-4B → Qwen3-0.6B 与官方已训练 Fuser。
-本轮完成 CPU/CUDA 时间线、算子分析、KV 导入优化、显存生命周期和混合到达调度实验。
+本实验完成 CPU/CUDA 时间线、算子分析、KV 导入优化、显存生命周期和混合到达调度实验。
 完整实测表由脚本从原始 JSON 生成，见 [测量汇总](../results/profiling/summary.zh-CN.md)。
 
 ![性能与显存概览](../results/profiling/overview.png)
@@ -33,7 +33,7 @@ CUDA Graph 主要减少逐算子主机发射成本，不能把它理解为消除
 更不是 occupancy；缺口也可能包含 profiler 扰动。eager 开启 shape 记录，开销尤其大。
 性能加速比一律取 profiler 关闭的实验，不能用 trace 的 wall time 做性能对比。
 这与 [PyTorch Profiler 对额外开销及张量引用的说明](https://docs.pytorch.org/docs/2.8/profiler.html)一致。
-当前环境未找到 Nsight Systems；本轮没有采集 Nsight Compute 硬件计数器。
+当前环境未找到 Nsight Systems；本实验没有采集 Nsight Compute 硬件计数器。
 
 ## 2. KV 导入：从定位到实测优化
 
@@ -72,7 +72,7 @@ allocator 缓存。导入写入预分配 KV 池，导入期间 HF 融合 KV 仍�
 缓存保留，没有观察到这三次请求导致的 live tensor 累积。
 两模型在 2K prefix forward 结束时各产生 `[1,2047,151936]` 的 BF16 logits，
 每份约 **593.2MiB**。官方路径还保留干净 KV 克隆和融合中间张量，解释了为什么不能
-仅按模型权重加分页池估算峰值。本轮保留官方完整 logits 路径，未为了省显存改动正确性参考。
+仅按模型权重加分页池估算峰值。本实验保留官方完整 logits 路径，未为了省显存改动正确性参考。
 
 详细 GiB、logits 的实际 shape/dtype/字节和峰值以 [memory.json](../results/profiling/memory.json)
 与汇总表为准。`allocated`、`reserved`、CUDA driver 总占用是不同指标，不能互相替代；
@@ -114,7 +114,7 @@ TPOT 是每请求 `(末 token 时间-首 token 时间)/(输出数-1)`；interval
 2K/B8、32-token 自由 greedy 的导入加解码为 **143.07ms**；同历史对照为
 **145.88ms**。B1 新请求端到端为 **244.77ms（1K）/331.19ms（2K）**。
 共 100 条 decode、10 条端到端记录，原数值验证集及 KV/回收检查通过。
-扩展任务仍有数值阈值失败，详见第二轮报告，不能宣称普遍严格等价。
+扩展任务仍有数值阈值失败，详见性能与正确性评估，不能宣称普遍严格等价。
 
 模型加载、编译、分词和 HTTP 不在热启动计时内。原始 nano 数据保持不变，
 模块已整理为 `nano_benchmark.py`；旧结果中的参数和 trace 栈保留测量时记录。
@@ -156,5 +156,5 @@ $PY scripts/summarize_profiling.py
 
 trace `.json.gz` 解压后可用 Perfetto 打开；memory snapshot 解压后可用 PyTorch memory
 可视化工具分析。原始文件均保存于项目目录，本次没有上传到外部可视化服务。
-本轮新增主要是独立 profiling 脚本；核心仍复用官方模型和推理引擎，没有引入自研 attention kernel。
+Profiling 采用独立脚本；核心仍复用官方模型和推理引擎，没有引入自研 attention kernel。
 测量期与当前整理后的源码哈希分开记录；核心代码仍保持在原定规模内。

@@ -61,7 +61,7 @@ Graph 路径额外导入平均耗时 3.90/7.64 ms，解释了为什么首 token 
   本次 Graph 在 1K 的 31/127 步中分别与官方 top-1 一致 30/126 步；
   2K 分别为 31/31 和 127/127。**不能宣称输出严格等价或任务质量无损。**
 - 已有独立基准中，官方/Graph 的单请求 TTFT 为 161.9/165.3 ms（1K）
-  和 238.4/247.5 ms（2K）；这属于首轮结果，不是本次审计新增的 TTFT 指标。
+  和 238.4/247.5 ms（2K）；这属于独立基线结果，不是本次审计新增的 TTFT 指标。
 - 本次审计没有做显存收益对比。已有独立基准的最大 PyTorch allocated 峰值
   从官方 12.47 GiB 增至 Graph 15.60 GiB，包含额外接收模型和 2044 MiB KV 池。
   分页带来可控容量和分配回收能力，当前实现没有证明峰值显存更低。
@@ -82,7 +82,7 @@ python -m c2c_decode.efficiency --repeats 5 \
 - [验证代码](../src/c2c_decode/efficiency.py)
 - [原始逐次记录、token 历史与版本](../results/efficiency-audit.json)
 - [自动生成的完整对照表](../results/efficiency-audit.zh-CN.md)
-- [首轮正确性、吞吐和显存结果](results.zh-CN.md)
+- [正确性、吞吐和显存评估](results.zh-CN.md)
 
 可用于项目描述的表述：在 RTX 4090 上，将官方 C2C 融合 KV 接入 nano-vLLM
 分页解码和 CUDA Graph；在相同融合状态及 token 历史的单请求测试中，

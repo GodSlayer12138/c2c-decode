@@ -1,4 +1,4 @@
-# 后续优化测量
+# 系统配置测量
 
 RTX 4090、BF16，固定 Qwen3 组合和已训练 C2C Fuser 不变；所有速度测量均关闭 PyTorch Profiler。
 

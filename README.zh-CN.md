@@ -6,13 +6,16 @@
 
 模型固定为 `Qwen/Qwen3-4B` → `Qwen/Qwen3-0.6B`，融合权重为 `nics-efc/C2C_Fuser/qwen3_0.6b+qwen3_4b_Fuser/final`，不能任意替换 Base 或其他 Qwen 变体。上游 commit 见 `upstream.lock.json`，模型 revision 与路径由 `scripts/download_models.py` 记录。
 
-已在 RTX 4090 完成实现和测量：[首轮结果与限制](docs/results.zh-CN.md)、[原始汇总](results/summary.zh-CN.md)。[同工作量效率审计](docs/efficiency-verification.zh-CN.md)使用交错重复及 eager/FlashAttention-2 对照，所测 B1 热启动 decode 加速 9.2–10.0 倍，端到端 3.0–3.7 倍。KV 导入无损；初始 BF16 数值集通过，但扩展任务暴露阈值失败和 top-1 差异，不能声称普遍等价。`validate --strict-tokens` 可执行严格 token 检查。
+## 系统实现与实测效果
 
-[Profiling 与优化](docs/profiling-results.zh-CN.md)包含真实 CPU/CUDA trace、算子分析、显存快照与 432 个到达回放请求。当前默认逐层 scatter 导入，40 组配对中的导入加速为 3.5–7.2 倍，优化前后生成 token 一致。早期文档保留旧逐页导入数据，当前实现参考 `results/profiling/summary.md`。
+系统复用官方 prefill 和融合，将接收端融合 KV 精确导入 nano-vLLM 分页池，支持变长批量解码、容量预留、页面回收及可选 CUDA Graph。CLI/服务默认精简 prefix logits 和逐层 scatter 导入；分块 prefill、输入缓冲复用保持可选。
 
-[第二轮优化](docs/next-improvements.zh-CN.md)增加精简 prefix logits、可选分块 prefill、输入缓冲区复用，以及仅本机访问的 HTTP/SSE 服务，支持有界准入、取消与 deadline。CLI/server 默认精简 logits，CLI 的 `--official-prefill` 恢复原路径；分块和缓冲区复用默认关闭。扩展任务中答案保持一致，但数值门槛失败仍如实保留。
+本机 HTTP/SSE 服务提供有界排队、逐 token 输出、EOS、取消和协作式超时。核心设计、首 token 交接及运行方式统一见 [系统设计](docs/design.zh-CN.md)。
 
-当前 nano 项目通过 37 项测试与真实 GPU 交接/解码冒烟检查，见[当前验证](docs/validation.zh-CN.md)。这不替代历史性能或扩展数值评测。
+- 同工作量 B1 对照中，1K/2K 输入的 Graph decode 加速 9.2–10.0 倍，32-token 请求端到端加速 3.0–3.7 倍；详见 [效率验证](docs/efficiency-verification.zh-CN.md)。
+- Scatter 相对逐页导入加速 3.5–7.2 倍；精简 logits 在生产端单独测量时降低 2K 峰值约 1.16GiB。各实验的配置、计时边界与适用范围见 [性能与正确性评估](docs/results.zh-CN.md) 和 [性能分析](docs/profiling-results.zh-CN.md)。
+- 1024-token 分块在所测突发负载中降低 token 间隔 P99 79.0%，代价是吞吐下降 5.2%、TTFT P99 上升 5.8%，默认关闭。
+- KV 导入无损；37 项测试与 GPU 交接/解码冒烟通过。扩展任务仍有 BF16 数值门槛失败和 top-1 差异，不宣称普遍输出等价；见 [验证记录](docs/validation.zh-CN.md)。
 
 ## 运行
 

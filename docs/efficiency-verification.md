@@ -39,10 +39,10 @@ Mean official prefill time is nearly identical between the official/Graph E2E pa
 ## Scope and limitations
 
 - This is a warmed execution benchmark on fixed-length synthetic inputs, not a task accuracy evaluation. At 1K, Graph agrees with official top-1 on 30/31 and 126/127 steps; at 2K, agreement is 31/31 and 127/127. **Strict output equivalence or lossless task quality is not established.**
-- Earlier independent measurements report official/Graph B1 TTFT of 161.9/165.3 ms at 1K and 238.4/247.5 ms at 2K. These are first-round results, not new TTFT measurements in this audit.
+- Earlier independent measurements report official/Graph B1 TTFT of 161.9/165.3 ms at 1K and 238.4/247.5 ms at 2K. These are independent baseline measurements, not new TTFT measurements in this audit.
 - This audit does not compare memory savings. Earlier independent peaks rise from 12.47 GiB official to 15.60 GiB Graph, including an extra receiver and a 2044 MiB KV pool. Paging provides bounded capacity and allocation/reclamation; lower peak memory has not been demonstrated.
 - Earlier batch=8 throughput of 2413.5/1816.6 tok/s is aggregate decode throughput, not evidence for B1 speedup. All efficiency conclusions here use B1 controls.
-- Ranges across five repetitions are not confidence intervals. All pages were reclaimed and GPU memory/utilization returned to zero after exit. This round did not test long-running service loads, P99 or energy consumption.
+- Ranges across five repetitions are not confidence intervals. All pages were reclaimed and GPU memory/utilization returned to zero after exit. This audit did not test long-running service loads, P99 or energy consumption.
 
 ## Reproduction and evidence
 
@@ -56,6 +56,6 @@ python -m c2c_decode.efficiency --repeats 5 \
 - [Verification code](../src/c2c_decode/efficiency.py)
 - [Raw repetitions, token histories and versions](../results/efficiency-audit.json)
 - [Generated complete comparison](../results/efficiency-audit.md)
-- [First-round correctness, throughput and memory results](results.md)
+- [Correctness, throughput and memory evaluation](results.md)
 
 Suggested project description: Imported official C2C fused KV into nano-vLLM paged decoding and CUDA Graph on RTX 4090. Matched-state, matched-history single-request tests with 1K/2K inputs show approximately 9–10× faster decode and 3.0–3.7× faster end-to-end execution for 32-token outputs, with BF16 numerical differences and additional memory costs explicitly recorded.

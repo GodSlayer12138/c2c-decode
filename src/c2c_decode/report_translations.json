@@ -38,7 +38,7 @@
   "Five repetitions/case; graph decode, profiler disabled. Handoff excludes official prefill; E2E includes it and local CUDA IPC. Historical measured values are retained.": "每档五次重复，graph decode，关闭 profiler；handoff 不含官方 prefill，E2E 包含 prefill 和本地 CUDA IPC；保留历史实测值。",
   "Free greedy: 32 outputs/request": "自由 greedy：每请求输出 32 token",
   "Matched history: 32 outputs/request": "相同历史：每请求输出 32 token",
-  "Follow-up optimization measurements": "后续优化测量",
+  "System configuration measurements": "系统配置测量",
   "RTX 4090, BF16, unchanged pinned Qwen3 pair and trained C2C Fuser. All speed measurements have PyTorch Profiler disabled.": "RTX 4090、BF16，固定 Qwen3 组合和已训练 C2C Fuser 不变；所有速度测量均关闭 PyTorch Profiler。",
   "Producer: randomized mode order, 5 repetitions": "生产端：随机模式顺序，重复五次",
   "Memory peaks below include official producer models/Fuser only, without nano receiver or its KV pool.": "以下峰值仅含官方生产端模型/Fuser，不含 nano 接收模型或其 KV 池。",

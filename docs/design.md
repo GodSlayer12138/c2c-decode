@@ -60,7 +60,7 @@ fused prefix. Future reuse would have to include sender/Fuser revisions, input,
 alignment, fusion settings, precision and positional context. No preemption or
 swap is implemented. GPU work is serialized; serial prefill can stall active
 decode. The optional serving loop can interleave clean-prefill chunks with
-decode and exposes a loopback SSE demo; see `next-improvements.md` for its limits.
+decode and exposes a loopback SSE demo; see the local serving section below for its limits.
 
 ## Measurement contract
 
@@ -96,3 +96,56 @@ decode batch at most 8. CUDA graphs are optional, with eager mode retained for
 debugging. No training, quantization, tensor parallel deployment, or claimed
 production serving equivalence. Official serving progress must be revisited as
 the upstream evolves; the checked main README still announces it as forthcoming.
+
+## Implemented paths
+
+`OfficialC2C` remains the correctness reference. `OptimizedC2C` temporarily sets both models' `logits_to_keep` to 1 within a scoped wrapper and restores the original methods afterwards. The official outer parameter is not forwarded to the inner models, so changing the outer call alone is insufficient. Full-vocabulary logits for the receiver's final prompt token are still computed. Fusion mathematics, clean-cache cloning, RoPE, first-token handoff and paged import are unchanged.
+
+CLI and serving default to this lean path; `--official-prefill` restores the original CLI path. Existing validation/benchmark entries retain the official reference. Results must be interpreted using their recorded producer and importer configuration.
+
+Chunked `prefill_steps` computes each model's **clean** prefix KV and yields the GPU to decode between chunks. Only after completing the prefix are both outputs passed back to original Rosetta forward for cloning, fusion and the final prompt token. A partially fused chunk is never fed back as clean prefill state. Positions and attention masks use absolute token positions; fusion remains one indivisible execution interval. Chunking changes attention shapes, so elementwise KV equality is not guaranteed on long inputs.
+
+`PagedDecoder(fast_inputs=True)` reuses two fixed pinned CPU staging buffers and corresponding GPU buffers to reduce allocations and H2D calls. CUDA events protect reuse until previous copies complete. Slot mapping remains contiguous as required by the upstream Triton kernel. This option remains opt-in.
+
+`ServingEngine` gives one thread ownership of GPU execution. It supports dynamic arrivals, a bounded waiting queue, page reservation for the full requested output, EOS, cancellation, timeouts, per-token events, and page cleanup on errors/shutdown. Cancellation and timeouts are cooperative between GPU work units, not kernel preemption. For example, a 1 ms HTTP deadline returned timeout after about 123 ms; this is not hard real-time enforcement.
+
+
+## Local serving and reproduction
+
+Run in the server project directory using the existing dedicated Linux CUDA environment:
+
+```bash
+export OMP_NUM_THREADS=8 TOKENIZERS_PARALLELISM=false
+export TORCHINDUCTOR_CACHE_DIR=$PWD/.cache/inductor
+export TRITON_CACHE_DIR=$PWD/.cache/triton
+export MPLCONFIGDIR=$PWD/.cache/matplotlib
+PY=/root/autodl-tmp/envs/c2c-decode/bin/python
+
+$PY -m pytest -q
+$PY scripts/next_experiments.py --section producer
+$PY scripts/next_experiments.py --section cpu
+$PY scripts/quality_eval.py
+$PY scripts/quality_eval.py --chunk-size 1024 --context-only \
+  --output results/next/quality-nano-chunk1024-context.json
+$PY scripts/service_experiments.py
+$PY scripts/next_experiments.py --section e2e
+$PY scripts/summarize_next.py
+
+# Lean logits by default; chunking is an optional latency/throughput tradeoff.
+$PY -m c2c_decode.server --port 8000
+# Alternatively: $PY -m c2c_decode.server --port 8000 --chunk-tokens 1024
+```
+
+The service binds only `127.0.0.1` and exposes `GET /health`, `POST /generate` and `DELETE /requests/<id>`. POST returns SSE: request ID, token IDs, cumulative text and completion events. Cumulative text is decoded at each event's own token index so slow clients do not see future tokens.
+
+```bash
+curl -N http://127.0.0.1:8000/generate \
+  -H 'Content-Type: application/json' \
+  -d '{"prompt":"Explain a KV cache briefly.","max_new_tokens":64,"timeout_s":30}'
+```
+
+Full queues return 429, invalid inputs 400/413, and engine failure/shutdown 503. This local demonstration has no public deployment, authentication, multi-GPU or OpenAI API compatibility guarantee. Load tables measure engine arrival replay; HTTP experiments check real socket/SSE lifecycle. They do not establish HTTP tail latency. A two-minute soak is not long-term stability evidence.
+
+Service experiments cover six configurations × three arrival gaps × three fixed seeds × 24 requests, totaling 1296 requests. Configurations share arrivals, input and output lengths within a seed. Each percentile row has only 72 requests. A separate bounded soak and real HTTP lifecycle check supplement these replays. The illustrative SLO was fixed before execution: TTFT≤1000ms and every token gap≤100ms, without tuning after results.
+
+Core code is about 1738 lines including blanks, within the intended scope. Evaluation scripts are in `scripts/`. Models, Fuser, attention kernels and the cache allocator reuse upstream implementations.

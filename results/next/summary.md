@@ -1,4 +1,4 @@
-# Follow-up optimization measurements
+# System configuration measurements
 
 RTX 4090, BF16, unchanged pinned Qwen3 pair and trained C2C Fuser. All speed measurements have PyTorch Profiler disabled.
 

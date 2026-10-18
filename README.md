@@ -12,33 +12,16 @@ Exact pair: `Qwen/Qwen3-4B` → `Qwen/Qwen3-0.6B`, with
 are not interchangeable. Upstream commits are in `upstream.lock.json`; model
 revisions and resolved paths are recorded by `scripts/download_models.py`.
 
-The first RTX 4090 implementation and measurements are complete. See
-[measured results and limitations](docs/results.md) and [raw benchmark summary](results/summary.md).
-The [matched-work efficiency audit](docs/efficiency-verification.md) verifies
-9.2–10.0x warm B1 decode speedup and 3.0–3.7x E2E speedup for the measured cases,
-with interleaved repetitions and eager/FlashAttention-2 controls.
-KV import is lossless. The initial BF16 numerical suite passed; expanded task
-checks expose numerical-threshold failures and top-1 differences versus the official path. Use
-`validate --strict-tokens` to enforce strict token equivalence.
+## System and measured results
 
-The [profiling and optimization study](docs/profiling-results.md) adds real CPU/CUDA
-traces, operator analysis, memory snapshots and 432 scheduled-arrival requests.
-The nano importer now defaults to layer-wise scatter: 3.5–7.2x faster import in
-40 paired measurements, with identical generated tokens between import modes.
-Historical reports above retain the old per-page importer; use the refreshed
-nano audit in `results/profiling/summary.md` for the optimized implementation.
+The system reuses official prefill/fusion and imports receiver fused KV exactly into nano-vLLM's paged pool, with variable-length batched decode, capacity reservation, reclamation and optional CUDA Graph. CLI/serving defaults to lean prefix logits and layer-wise scatter; chunked prefill and input buffers remain optional.
 
-The [second optimization study](docs/next-improvements.md) adds reduced prefix
-logits, optional chunked prefill, reusable decode input buffers, and a loopback
-HTTP/SSE demo with bounded admission, cancellation and deadlines. CLI/server
-default to reduced logits; `--official-prefill` restores the CLI reference path.
-Chunking and input buffers remain opt-in. Expanded authored task checks preserve
-the measured answers but expose additional backend numerical-threshold failures;
-these remain visible in the report rather than relaxing the tolerances.
+The loopback HTTP/SSE service supports bounded queueing, token events, EOS, cancellation and cooperative timeouts. Architecture, first-token handoff and reproduction are described together in [system design](docs/design.md).
 
-The current nano-only package passes 37 tests and a real GPU handoff/decode smoke
-check; see [current validation](docs/validation.md). This regression check does
-not replace the historical performance or expanded numerical-quality results.
+- Matched-work B1 controls show 9.2–10.0× faster Graph decode for 1K/2K inputs and 3.0–3.7× faster E2E for 32-token outputs; see [efficiency verification](docs/efficiency-verification.md).
+- Scatter import is 3.5–7.2× faster than page-loop copying; lean logits lowers the separately measured 2K producer-only peak by about 1.16GiB. Configurations, timing boundaries and limitations are in [performance and correctness](docs/results.md) and [profiling](docs/profiling-results.md).
+- In the measured burst workload, 1024-token chunks reduce token-gap P99 by 79.0%, at the cost of 5.2% lower throughput and 5.8% higher TTFT P99. Chunking is off by default.
+- KV import is lossless; 37 tests and a GPU handoff/decode smoke check pass. Expanded tasks retain BF16 threshold failures and top-1 differences, so universal output equivalence is not claimed. See [validation](docs/validation.md).
 
 ## Run
 
