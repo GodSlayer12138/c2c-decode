@@ -16,7 +16,7 @@ without modifying its base. Transformers was changed from 4.57.1 to 4.52.4 to
 match C2C's pinned DynamicCache API. PyTorch 2.8.0+cu128 and FlashAttention 2.8.3
 were retained from the image. This differs from the official C2C package's
 torch==2.6.0 requirement. Reference and adapted paths run under the same recorded
-runtime; do not represent them as an exact reproduction of the authors' environment.
+runtime.
 
 | Resource | Observed |
 |---|---|

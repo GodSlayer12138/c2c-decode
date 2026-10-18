@@ -5,7 +5,6 @@
   "Official C2C cached decode baseline (batch=1; no second receiver or paged pool):": "官方 C2C 缓存解码基线（batch=1，无第二份接收模型或分页池）：",
   "TTFT includes FIFO queueing and cache import. Prefill batch is always one.": "TTFT 包括 FIFO 排队和缓存导入；prefill batch 始终为 1。",
   "Decode throughput excludes each request's first token; E2E includes all phases.": "Decode 吞吐不计每个请求的首 token；E2E 包含所有阶段。",
-  "Peak allocated is PyTorch memory, not total device usage. No claim of production serving performance.": "峰值 allocated 指 PyTorch 内存，不是设备总占用；不据此宣称生产服务性能。",
   "Matched-work efficiency verification": "同工作量效率验证",
   "One RTX 4090, BF16, batch=1, fixed output count. Five or more interleaved pairs per case.": "单张 RTX 4090，BF16，batch=1，固定输出数；每档至少五组交错配对。",
   "All decode paths start from the exact same official fused KV and consume the same token history.": "所有解码路径从完全相同的官方融合 KV 开始，并使用相同 token 历史。",
@@ -15,8 +14,6 @@
   "Ranges are observed paired extrema, not confidence intervals.": "范围是观测到的配对极值，不是置信区间。",
   "Both HF and nano receivers remain resident in this controlled experiment; it is not a memory-efficiency comparison.": "本受控实验中 HF 和 nano 接收模型同时常驻，不用于比较显存效率。",
   "FlashAttention-2 is an additional HF decode control; official prefill remains SDPA in all cases.": "FlashAttention-2 是额外的 HF 解码对照；所有路径的官方 prefill 仍使用 SDPA。",
-  "This validates warm execution efficiency, not universally identical text or equal task accuracy.": "这验证热启动执行效率，不证明普遍文本一致或任务准确率相等。",
-  "The project integrates existing nano-vLLM kernels and CUDA Graphs; it does not invent those speedups.": "项目集成既有 nano-vLLM 内核与 CUDA Graph，不宣称发明这些加速方法。",
   "Profiling measurements": "Profiling 测量",
   "RTX 4090 / BF16 / pinned Qwen3 C2C pair. See docs/profiling-results.md for interpretation.": "RTX 4090 / BF16 / 固定 Qwen3 C2C 组合；解释见 docs/profiling-results.md。",
   "KV import: paired, randomized order, profiler disabled": "KV 导入：配对、随机顺序、关闭 profiler",
@@ -50,7 +47,6 @@
   "All official/lean/lean+buffer token histories match in this E2E matrix. Chunk is an experimental scheduling tradeoff and does not preserve bitwise KV.": "该 E2E 矩阵内 official/lean/lean+buffer 的 token 历史一致；chunk 是实验性调度取舍，不保持 KV 逐位相等。",
   "Authored task quality and logit diagnostics": "自编任务质量与 logits 诊断",
   "36 authored cases: 10 arithmetic, 10 QA, 10 Python-output reasoning, 6 context retrieval. Strict normalized answer exact match also penalizes extra explanation. It is not semantic accuracy or a public benchmark. Generation is capped at 64 tokens.": "36 个自编样例：10 算术、10 问答、10 Python 输出推理、6 上下文检索。严格规范化答案匹配也惩罚额外解释，不是语义准确率或公开基准；最多生成 64 token。",
-  "Numerical tolerances remain cosine>=0.999, RMSE<=0.15, max_abs<=1. The following failures are retained, not reclassified as passes. Teacher forcing also continues after EOS; before/at-EOS failures are distinguished explicitly.": "数值门槛保持 cosine>=0.999、RMSE<=0.15、max_abs<=1。以下失败保留原分类，不改判为通过。Teacher forcing 会越过 EOS，明确区分 EOS 前/处的失败。",
   "Targeted 1024-token chunk follow-up": "1024-token 分块的针对性补测",
   "Six long-context cases only, after observing the 512-token chunk failure; not a new independent full benchmark.": "在发现 512-token 分块失败后，仅补测六个长上下文样例；不是新的独立完整基准。",
   "Scheduled arrival replay": "预定到达回放",
@@ -162,5 +158,7 @@
   "Offered / rejected": "提交数 / 拒绝数",
   "Completion reasons": "结束原因",
   "Final free pages": "最终空闲页数",
-  "Allocated before / after GiB": "开始 / 结束时已分配 GiB"
+  "Allocated before / after GiB": "开始 / 结束时已分配 GiB",
+  "Peak allocated is PyTorch memory, not total device usage.": "峰值 allocated 指 PyTorch 内存，不是设备总占用。",
+  "Numerical tolerances: cosine>=0.999, RMSE<=0.15, max_abs<=1. Teacher forcing continues after EOS; the tables distinguish all checked steps from before/at-EOS steps.": "数值门槛：cosine>=0.999、RMSE<=0.15、max_abs<=1。Teacher forcing 会越过 EOS；表格分别统计全部检查步骤和 EOS 前/处的步骤。"
 }

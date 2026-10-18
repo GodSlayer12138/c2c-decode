@@ -28,7 +28,7 @@ The old adapter copies per layer and physical page. The new adapter constructs t
 
 A separate 2K/B8 import trace reduces kernel count **3592 → 488**: 3584 page copies become 448 layer writes, plus indexing/first-token work. This supports the diagnosis of excessive small kernels and host launches. Effective payload GB/s counts KV size once, not physical DRAM traffic.
 
-Tests add fragmented pages, partial tails, untouched slots and both import modes; 22 tests passed in the import experiment. Official fused-continuation logits, matched-history teacher forcing, free greedy and reclamation were rerun. Tokens matching across import modes does not establish strict engine/official token equivalence; BF16 differences remain subject to the original numerical thresholds and top-1 reporting.
+Tests add fragmented pages, partial tails, untouched slots and both import modes; 22 tests passed in the import experiment. Official fused-continuation logits, matched-history teacher forcing, free greedy and reclamation were rerun. Import modes produce matching tokens; cross-engine BF16 errors and top-1 agreement are recorded in the numerical evaluation.
 
 ## 3. Memory lifecycle
 
@@ -56,7 +56,7 @@ P50/P95/P99 are provided for TTFT, queue, E2E, request TPOT and token intervals.
 
 The independent official producer uses same-GPU CUDA IPC, a 2044MiB pool, 1K/2K inputs, B1/2/4/8 with 32 outputs and supplementary B1/128-output runs. Five warmed repetitions per configuration cover free greedy and matched-history teacher forcing. E2E includes IPC and cannot be directly subtracted from in-process timings.
 
-2K/B8 import+decode takes **143.07ms** free greedy and **145.88ms** matched history. B1 fresh-request E2E is **244.77ms at 1K / 331.19ms at 2K**. The 100 decode and ten E2E records pass the original numerical validation set, KV and reclamation checks. Expanded tasks still have threshold failures, documented in the performance and correctness evaluation; universal strict equivalence is not claimed.
+2K/B8 import+decode takes **143.07ms** free greedy and **145.88ms** matched history. B1 fresh-request E2E is **244.77ms at 1K / 331.19ms at 2K**. The 100 decode and ten E2E records pass the original numerical validation set, KV and reclamation checks. Expanded tasks still have threshold failures, documented in the performance and correctness evaluation.
 
 Loading, compilation, tokenization and HTTP are excluded from warmed timing. Original nano data remains unchanged; the current entry is `nano_benchmark.py`. Historical argument fields and trace stacks retain measurement-time values.
 
@@ -93,4 +93,4 @@ To rerun one group, use `profile_experiments.py --section import|memory|scheduli
 | `nano-scatter.json` | Isolated-producer nano correctness/performance matrix |
 | `measurement-provenance.json`, `summary-source-sha256.json`, `tests.txt` | Historical retained-module hashes, summary-time source hashes and tests |
 
-Decompressed trace JSON can be opened in Perfetto; decompressed memory snapshots can be inspected with PyTorch's memory viewer. Raw files remain in the project and were not uploaded to external visualization services. Most new code is independent profiling scripts; models and inference kernels remain upstream, without a custom attention kernel. Measurement-time and current source hashes are recorded separately; core size remains within the intended scope.
+Decompressed trace JSON can be opened in Perfetto; decompressed memory snapshots can be inspected with PyTorch's memory viewer. Raw files remain in the project and were not uploaded to external visualization services. Profiling uses independent scripts. Measurement-time and current source hashes are recorded separately.

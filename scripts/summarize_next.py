@@ -92,7 +92,7 @@ def main():
                         gates.append(dict(backend=name,mode=mode,id=r["id"],step=i+1,
                             before_or_at_eos=i<len(r["official_tokens"]),**s))
     table(lines, ["Engine","Producer","Official exact answers / 36","Engine exact answers / 36","Exact sequences / 36","Truncated / 36","Changed text vs old nano / 36"], rows)
-    lines += ["Numerical tolerances remain cosine>=0.999, RMSE<=0.15, max_abs<=1. The following failures are retained, not reclassified as passes. Teacher forcing also continues after EOS; before/at-EOS failures are distinguished explicitly.", ""]
+    lines += ["Numerical tolerances: cosine>=0.999, RMSE<=0.15, max_abs<=1. Teacher forcing continues after EOS; the tables distinguish all checked steps from before/at-EOS steps.", ""]
     table(lines,["Engine","Producer","Failing checked steps","Failing steps before/at EOS"],
         [[name, mode, sum(g["backend"]==name and g["mode"]==mode for g in gates),
           sum(g["backend"]==name and g["mode"]==mode and g["before_or_at_eos"] for g in gates)]

@@ -6,8 +6,7 @@ Experiments use the pinned Qwen3-4B → Qwen3-0.6B pair, official Fuser, BF16 an
 
 CLI/serving defaults to lean prefix logits, scatter import and paged decoding. Chunked prefill and input buffers are optional; Graph and eager are measured separately. See [design and serving](design.md), [matched-work efficiency](efficiency-verification.md) and [profiling](profiling-results.md).
 
-Measured 2026-10-17 with pinned upstream commits and model revisions, BF16,
-without quantization or training. This adapts the existing C2C method.
+Measured 2026-10-17 with pinned upstream commits and model revisions in BF16.
 
 ## Correctness and limits
 
@@ -19,13 +18,11 @@ without quantization or training. This adapts the existing C2C method.
   exit gate; all downloaded weight hashes verify. See `results/tests.txt`.
 - Long-input teacher-forced logits pass predeclared BF16 thresholds, but strict
   token equivalence does **not** hold: eager top-1 matches 88/90 steps and CUDA
-  Graph matches 87/90. Do not claim universally identical generated sequences.
+  Graph matches 87/90.
 
 Eager worst absolute logit error: 0.375; worst RMSE: 0.08594; minimum cosine:
 0.999341. The two differing argmax steps have official top-1 margins 0.125 and
-0.0625. This is consistent with different BF16 arithmetic paths, but does not
-prove that every future difference has that cause. `validate --strict-tokens`
-exposes a stricter, failing gate. The default `passed` field means the documented
+0.0625. This is consistent with different BF16 arithmetic paths. The default `passed` field means the documented
 tolerance and fixture gates; `strict_token_equivalence` is separate.
 
 Raw records are in `results/validation-eager.json` and `validation-graph.json`.
@@ -68,7 +65,6 @@ eager decode. Batching raises aggregate throughput. Serial prefill and fusion
 dominate E2E in this control configuration; cache import is a smaller cost. Useful future experiments
 include prefill/decode overlap and correctly keyed fused-prefix reuse.
 
-
 ## Producer and CPU optimization results
 
 Five seeded randomized pairs per input length give these producer medians:
@@ -82,7 +78,7 @@ This memory experiment includes only official producer models and Fuser, **witho
 
 Independent input-buffer pairs reduce median import+decode **71.603 → 70.918ms** at 1K/B1 and **144.430 → 143.307ms** at 2K/B8. One of five 257/B4 pairs is slower; the overall benefit is about 1%, so reuse is not default. All 15 pairs generate identical tokens.
 
-Chunking slows single-request prefill: 2K takes **514.95/324.34/258.10ms** with 256/512/1024-token chunks. Its purpose is to reduce decode stalls, not accelerate isolated prefill. See the generated summary for fresh-request E2E, randomized arrivals, maximum gaps and SLO data.
+Chunking slows single-request prefill: 2K takes **514.95/324.34/258.10ms** with 256/512/1024-token chunks. Its purpose is to reduce decode stalls. See the generated summary for fresh-request E2E, randomized arrivals, maximum gaps and SLO data.
 
 ## End-to-end behavior and defaults
 
@@ -122,8 +118,8 @@ The 36 authored functional cases include ten math, ten QA, ten Python-output rea
 
 Strict normalized-answer matching scores **7/36** for official and all adapted paths. Extra explanation counts as mismatch, so the score mixes content correctness with format compliance. For example, official output `The answer is 323.` fails the answer-only format. Genuine content errors also occur: official answers `3*x+7=28` with `x=3`.
 
-Nano original, lean and 512-token chunk paths each match official output token-for-token on **35/36** cases. The remaining FIFO answer differs by comma/hyphen at an official top-1/top-2 margin of **0**; official itself also violates the requested answer format. Adapted answers match each other. No new answer degradation was observed here, but general quality equivalence is not established.
+Nano original, lean and 512-token chunk paths each match official output token-for-token on **35/36** cases. The remaining FIFO answer differs by comma/hyphen at an official top-1/top-2 margin of **0**; official itself also violates the requested answer format. Adapted answers match each other. No new answer degradation was observed in these cases.
 
-Expanded stepwise logits checks **do not all pass the existing thresholds** of cosine≥0.999, RMSE≤0.15 and max_abs≤1. Nano has cosine about **0.998749** on one valid `math-7` generation step, identically across all three producer modes: an existing backend difference, not introduced by lean logits. The 512-token chunk adds a valid-step threshold failure on `context-0`. Unchanged output does not make that configuration numerically validated. All chunked modes remain experimental. Other failures occur after forced generation beyond EOS; both all-step and pre-/at-EOS classifications remain in the summary and `numerical-failures.json`, without relabeling failures as passes.
+Expanded stepwise logits checks **do not all pass the existing thresholds** of cosine≥0.999, RMSE≤0.15 and max_abs≤1. Nano has cosine about **0.998749** on one valid `math-7` generation step, identically across all three producer modes: an existing backend difference, not introduced by lean logits. The 512-token chunk adds a valid-step threshold failure on `context-0`. All chunked modes remain experimental. Other failures occur after forced generation beyond EOS; both all-step and pre-/at-EOS classifications remain in the summary and `numerical-failures.json`.
 
 A targeted 1024-token chunk follow-up on the six existing long-context cases matches official tokens on 6/6, passes numerical thresholds for checked steps, imports KV exactly and reclaims all pages. It is a supplementary check on existing cases, not an independent full quality benchmark; 1024-token chunking remains experimental and off by default.

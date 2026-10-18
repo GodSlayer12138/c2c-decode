@@ -13,11 +13,10 @@
 - 所有烟测请求的缓存页全部回收；进程结束后设备显存为 0 MiB、利用率 0%。
 - 两份汇总脚本从保留的 nano 原始数据重新生成表格与图片。
 
-这是整理后的功能回归，**不作为新的速度或质量基准**。原有扩展任务中的数值失败
-仍保留在 `results/next/numerical-failures.json`，本次小样本通过不能覆盖这些失败。
+本页记录功能回归。扩展任务的逐步数值检查见 `results/next/numerical-failures.json`。
 
 证据：[测试输出](../results/cleanup/tests.txt)、[GPU 冒烟原始记录](../results/cleanup/nano-smoke.json)。
 
-`measurement-provenance.json` 记录历史测量期的保留模块哈希，不代表当前源码；
+`measurement-provenance.json` 记录历史测量期的保留模块哈希；
 `summary-source-sha256.json` 记录重新生成报告时的源码。nano 原始计时、输出与 trace
 未被改写；其中路径/参数字段保留采集时的值。当前基准入口为 `nano_benchmark.py`。

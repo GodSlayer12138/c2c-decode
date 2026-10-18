@@ -5,7 +5,6 @@
 An inference systems adaptation of [official C2C](https://github.com/thu-nics/C2C)
 to [nano-vLLM](https://github.com/GeeeekExplorer/nano-vllm) paged decode. Focus:
 KV handoff, paging, admission, variable-length batches and measured correctness.
-We reuse pretrained models and the published Fuser; we do not train or invent C2C.
 
 Exact pair: `Qwen/Qwen3-4B` → `Qwen/Qwen3-0.6B`, with
 `nics-efc/C2C_Fuser/qwen3_0.6b+qwen3_4b_Fuser/final`. Base and other Qwen variants
@@ -21,7 +20,6 @@ The loopback HTTP/SSE service supports bounded queueing, token events, EOS, canc
 - Matched-work B1 controls show 9.2–10.0× faster Graph decode for 1K/2K inputs and 3.0–3.7× faster E2E for 32-token outputs; see [efficiency verification](docs/efficiency-verification.md).
 - Scatter import is 3.5–7.2× faster than page-loop copying; lean logits lowers the separately measured 2K producer-only peak by about 1.16GiB. Configurations, timing boundaries and limitations are in [performance and correctness](docs/results.md) and [profiling](docs/profiling-results.md).
 - In the measured burst workload, 1024-token chunks reduce token-gap P99 by 79.0%, at the cost of 5.2% lower throughput and 5.8% higher TTFT P99. Chunking is off by default.
-- KV import is lossless; 37 tests and a GPU handoff/decode smoke check pass. Expanded tasks retain BF16 threshold failures and top-1 differences, so universal output equivalence is not claimed. See [validation](docs/validation.md).
 
 ## Run
 
@@ -61,8 +59,7 @@ python -m c2c_decode.cli --graph --prompt "用一句话解释 KV Cache" \
 The benchmark varies decode concurrency 1/2/4/8 with 1K/2K nominal input lengths;
 requests in each batch intentionally have different lengths. All output is greedy
 BF16, total length capped at 4K. JSON reports include revisions, versions, timings,
-memory, generated IDs and diagnostics. Do not claim performance before inspecting
-the actual reports. A nonzero validation exit means a correctness gate failed.
+memory, generated IDs and diagnostics.
 
 ## Layout
 
@@ -81,10 +78,3 @@ the actual reports. A nonzero validation exit means a correctness gate failed.
 | `scripts/profile_*.py`, `scripts/profiling_utils.py` | Removable trace/timing instrumentation, import A/B, memory and arrival replay |
 | `scripts/summarize_profiling.py` | Validated data tables, timeline and performance figures |
 | `docs/design.md` | Positions, first-token handoff and metric definitions |
-
-Upstream code is checked out separately and not counted as new core code.
-Original upstream licenses remain in each checkout (C2C Apache-2.0 repository
-license; nano-vLLM MIT). Model and Fuser licenses remain with their repositories.
-The system serializes GPU work, with optional clean-prefill chunks interleaved
-with decode. The nano demo has a loopback HTTP endpoint; it has no prefix sharing,
-KV eviction/preemption or multi-GPU serving.

@@ -8,7 +8,7 @@
 
 服务器项目：`/root/autodl-tmp/c2c-decode`；专用 conda 环境：`/root/autodl-tmp/envs/c2c-decode`；模型缓存：`/root/autodl-tmp/huggingface`。
 
-远程环境从 AutoDL 预装环境克隆，没有修改 base。为匹配 C2C 的 DynamicCache API，将 Transformers 从 4.57.1 改为 4.52.4；保留镜像中的 PyTorch 2.8.0+cu128 和 FlashAttention 2.8.3。这不同于官方声明的 torch==2.6.0。参考与适配路径使用同一记录环境，不应描述为完全复刻作者运行环境。
+远程环境从 AutoDL 预装环境克隆，没有修改 base。为匹配 C2C 的 DynamicCache API，将 Transformers 从 4.57.1 改为 4.52.4；保留镜像中的 PyTorch 2.8.0+cu128 和 FlashAttention 2.8.3。这不同于官方声明的 torch==2.6.0。参考与适配路径使用同一记录环境。
 
 | 资源 | 观测值 |
 |---|---|

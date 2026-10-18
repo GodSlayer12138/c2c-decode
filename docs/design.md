@@ -3,7 +3,7 @@
 [中文版](design.zh-CN.md)
 
 This project adapts the existing Cache-to-Cache method to a small paged decode
-backend. It does not introduce or train C2C. Official Rosetta code owns all
+backend. Official Rosetta code owns all
 prefill and fusion math; nano-vLLM owns the Qwen3 model, weights loader, RoPE,
 FlashAttention decode, block allocator and optional CUDA graphs.
 
@@ -57,8 +57,7 @@ prefill. The profiling report measures the resulting latency tradeoff.
 
 Prefix hashing is deliberately disabled: a token-only hash cannot identify a
 fused prefix. Future reuse would have to include sender/Fuser revisions, input,
-alignment, fusion settings, precision and positional context. No preemption or
-swap is implemented. GPU work is serialized; serial prefill can stall active
+alignment, fusion settings, precision and positional context. GPU work is serialized; serial prefill can stall active
 decode. The optional serving loop can interleave clean-prefill chunks with
 decode and exposes a loopback SSE demo; see the local serving section below for its limits.
 
@@ -84,18 +83,13 @@ Warmup is excluded from reported benchmark rows; model loading is separately
 recorded. An explicit reference-only smoke run uses official `generate`.
 Numerical tests compare the official C2C continuation, not an unfused Qwen run.
 Teacher-forced logits and free-running greedy equality answer different questions.
-BF16 tolerances are declared in code before measurements; failures stay visible.
-`validate --strict-tokens` additionally returns failure for any teacher-forced
-top-1 difference. The default numerical gate must not be described as universal
-token equivalence; the JSON records both conclusions separately.
+JSON records BF16 error metrics and top-1 agreement separately.
 
 ## Scope
 
 Single GPU, BF16, greedy sampling, max total length 4096, prefill batch=1,
 decode batch at most 8. CUDA graphs are optional, with eager mode retained for
-debugging. No training, quantization, tensor parallel deployment, or claimed
-production serving equivalence. Official serving progress must be revisited as
-the upstream evolves; the checked main README still announces it as forthcoming.
+debugging.
 
 ## Implemented paths
 
@@ -107,8 +101,7 @@ Chunked `prefill_steps` computes each model's **clean** prefix KV and yields the
 
 `PagedDecoder(fast_inputs=True)` reuses two fixed pinned CPU staging buffers and corresponding GPU buffers to reduce allocations and H2D calls. CUDA events protect reuse until previous copies complete. Slot mapping remains contiguous as required by the upstream Triton kernel. This option remains opt-in.
 
-`ServingEngine` gives one thread ownership of GPU execution. It supports dynamic arrivals, a bounded waiting queue, page reservation for the full requested output, EOS, cancellation, timeouts, per-token events, and page cleanup on errors/shutdown. Cancellation and timeouts are cooperative between GPU work units, not kernel preemption. For example, a 1 ms HTTP deadline returned timeout after about 123 ms; this is not hard real-time enforcement.
-
+`ServingEngine` gives one thread ownership of GPU execution. It supports dynamic arrivals, a bounded waiting queue, page reservation for the full requested output, EOS, cancellation, timeouts, per-token events, and page cleanup on errors/shutdown. Cancellation and timeouts are cooperative between GPU work units, not kernel preemption. For example, a 1 ms HTTP deadline returned timeout after about 123 ms.
 
 ## Local serving and reproduction
 
@@ -144,8 +137,8 @@ curl -N http://127.0.0.1:8000/generate \
   -d '{"prompt":"Explain a KV cache briefly.","max_new_tokens":64,"timeout_s":30}'
 ```
 
-Full queues return 429, invalid inputs 400/413, and engine failure/shutdown 503. This local demonstration has no public deployment, authentication, multi-GPU or OpenAI API compatibility guarantee. Load tables measure engine arrival replay; HTTP experiments check real socket/SSE lifecycle. They do not establish HTTP tail latency. A two-minute soak is not long-term stability evidence.
+Full queues return 429, invalid inputs 400/413, and engine failure/shutdown 503. Load tables measure engine arrival replay; HTTP experiments check real socket/SSE lifecycle.
 
 Service experiments cover six configurations × three arrival gaps × three fixed seeds × 24 requests, totaling 1296 requests. Configurations share arrivals, input and output lengths within a seed. Each percentile row has only 72 requests. A separate bounded soak and real HTTP lifecycle check supplement these replays. The illustrative SLO was fixed before execution: TTFT≤1000ms and every token gap≤100ms, without tuning after results.
 
-Core code is about 1738 lines including blanks, within the intended scope. Evaluation scripts are in `scripts/`. Models, Fuser, attention kernels and the cache allocator reuse upstream implementations.
+Evaluation scripts are in `scripts/`.

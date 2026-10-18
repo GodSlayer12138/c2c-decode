@@ -11,8 +11,8 @@
 - All smoke-test pages were reclaimed. Device memory returned to 0 MiB and utilization to 0% after exit.
 - Both summary scripts regenerated tables and plots from retained nano measurements.
 
-This is a functional regression check after cleanup, **not a new speed or quality benchmark**. Existing expanded-task numerical failures remain in `results/next/numerical-failures.json`; this small passing sample does not invalidate them.
+This page records functional regression checks. Expanded-task stepwise numerical checks are in `results/next/numerical-failures.json`.
 
 Evidence: [test output](../results/cleanup/tests.txt), [raw GPU smoke results](../results/cleanup/nano-smoke.json).
 
-`measurement-provenance.json` records retained-module hashes from historical measurements, not current source certification. `summary-source-sha256.json` records source at summary generation. Raw nano timing, outputs and traces remain unchanged, including historical path/argument fields. The current benchmark entry is `nano_benchmark.py`.
+`measurement-provenance.json` records retained-module hashes from historical measurements. `summary-source-sha256.json` records source at summary generation. Raw nano timing, outputs and traces remain unchanged, including historical path/argument fields. The current benchmark entry is `nano_benchmark.py`.

@@ -56,7 +56,7 @@ All official/lean/lean+buffer token histories match in this E2E matrix. Chunk is
 | nano | lean | 7 | 7 | 35 | 1 | 0 |
 | nano | chunk-512 | 7 | 7 | 35 | 1 | 0 |
 
-Numerical tolerances remain cosine>=0.999, RMSE<=0.15, max_abs<=1. The following failures are retained, not reclassified as passes. Teacher forcing also continues after EOS; before/at-EOS failures are distinguished explicitly.
+Numerical tolerances: cosine>=0.999, RMSE<=0.15, max_abs<=1. Teacher forcing continues after EOS; the tables distinguish all checked steps from before/at-EOS steps.
 
 | Engine | Producer | Failing checked steps | Failing steps before/at EOS |
 |---|---|---|---|

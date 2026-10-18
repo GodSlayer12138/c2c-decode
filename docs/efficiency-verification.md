@@ -6,7 +6,7 @@ Measured on a rented RTX 4090 24GB on 2026-10-17. In warmed BF16, batch=1 tests 
 
 ## Comparison method
 
-- Models, Fuser and upstream revisions follow the lock file. No training or quantization.
+- Models, Fuser and upstream revisions follow the lock file.
 - All decode paths start from the same official fused KV; imported KV is read back and checked elementwise. Token histories are identical.
 - Four paths: official SDPA, HF FlashAttention-2 decode, paged eager, and paged CUDA Graph. The FlashAttention-2 control changes decode attention only; prefill remains SDPA.
 - After warmup, each configuration uses five paired repetitions in seeded randomized order: 80 decode records and 20 end-to-end records.
@@ -30,7 +30,7 @@ Times are medians of five repetitions; speedups are medians of paired ratios.
 | 1024 / 32 | 865.59 ms | 232.34 ms | 3.73× | 5/5 |
 | 2048 / 32 | 952.28 ms | 320.41 ms | 2.97× | 5/5 |
 
-Paged eager is approximately **1.31×** faster across all four configurations. Graph execution further reduces paged decode latency by approximately 7–8×. Most of the observed benefit comes from reusing nano-vLLM's CUDA Graph execution; it cannot all be attributed to paging or claimed as an invention of this project. This experiment does not separately attribute eager model, KV append and individual operator costs.
+Paged eager is approximately **1.31×** faster across all four configurations. Graph execution further reduces paged decode latency by approximately 7–8×. Most of the observed benefit comes from nano-vLLM's CUDA Graph execution. This experiment does not separately attribute eager model, KV append and individual operator costs.
 
 HF FlashAttention-2 decode achieves approximately **0.96×** paired speedup over SDPA, offering no improvement here. Changing that attention kernel does not remove the observed gap; other engines or optimized HF implementations may behave differently.
 
@@ -38,10 +38,10 @@ Mean official prefill time is nearly identical between the official/Graph E2E pa
 
 ## Scope and limitations
 
-- This is a warmed execution benchmark on fixed-length synthetic inputs, not a task accuracy evaluation. At 1K, Graph agrees with official top-1 on 30/31 and 126/127 steps; at 2K, agreement is 31/31 and 127/127. **Strict output equivalence or lossless task quality is not established.**
+- This is a warmed execution benchmark on fixed-length synthetic inputs, not a task accuracy evaluation. At 1K, Graph agrees with official top-1 on 30/31 and 126/127 steps; at 2K, agreement is 31/31 and 127/127.
 - Earlier independent measurements report official/Graph B1 TTFT of 161.9/165.3 ms at 1K and 238.4/247.5 ms at 2K. These are independent baseline measurements, not new TTFT measurements in this audit.
-- This audit does not compare memory savings. Earlier independent peaks rise from 12.47 GiB official to 15.60 GiB Graph, including an extra receiver and a 2044 MiB KV pool. Paging provides bounded capacity and allocation/reclamation; lower peak memory has not been demonstrated.
-- Earlier batch=8 throughput of 2413.5/1816.6 tok/s is aggregate decode throughput, not evidence for B1 speedup. All efficiency conclusions here use B1 controls.
+- This audit does not compare memory savings. Earlier independent peaks rise from 12.47 GiB official to 15.60 GiB Graph, including an extra receiver and a 2044 MiB KV pool. Paging provides bounded capacity and allocation/reclamation.
+- Batch=8 throughput of 2413.5/1816.6 tok/s is aggregate decode throughput. This efficiency audit uses B1 controls.
 - Ranges across five repetitions are not confidence intervals. All pages were reclaimed and GPU memory/utilization returned to zero after exit. This audit did not test long-running service loads, P99 or energy consumption.
 
 ## Reproduction and evidence

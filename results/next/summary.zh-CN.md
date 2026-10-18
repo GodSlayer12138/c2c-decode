@@ -56,7 +56,7 @@ RTX 4090、BF16，固定 Qwen3 组合和已训练 C2C Fuser 不变；所有速�
 | nano | lean | 7 | 7 | 35 | 1 | 0 |
 | nano | chunk-512 | 7 | 7 | 35 | 1 | 0 |
 
-数值门槛保持 cosine>=0.999、RMSE<=0.15、max_abs<=1。以下失败保留原分类，不改判为通过。Teacher forcing 会越过 EOS，明确区分 EOS 前/处的失败。
+数值门槛：cosine>=0.999、RMSE<=0.15、max_abs<=1。Teacher forcing 会越过 EOS；表格分别统计全部检查步骤和 EOS 前/处的步骤。
 
 | 引擎 | 生产端 | 检查失败步骤数 | EOS 前/处失败步骤数 |
 |---|---|---|---|

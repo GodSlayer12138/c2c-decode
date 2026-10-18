@@ -24,4 +24,4 @@ GPU：NVIDIA GeForce RTX 4090
 
 TTFT 包括 FIFO 排队和缓存导入；prefill batch 始终为 1。
 Decode 吞吐不计每个请求的首 token；E2E 包含所有阶段。
-峰值 allocated 指 PyTorch 内存，不是设备总占用；不据此宣称生产服务性能。
+峰值 allocated 指 PyTorch 内存，不是设备总占用。

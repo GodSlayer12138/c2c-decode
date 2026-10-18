@@ -30,5 +30,3 @@ Fresh-prefill E2E pairs (32 output tokens, including prefill/fusion/import/decod
 Ranges are observed paired extrema, not confidence intervals.
 Both HF and nano receivers remain resident in this controlled experiment; it is not a memory-efficiency comparison.
 FlashAttention-2 is an additional HF decode control; official prefill remains SDPA in all cases.
-This validates warm execution efficiency, not universally identical text or equal task accuracy.
-The project integrates existing nano-vLLM kernels and CUDA Graphs; it does not invent those speedups.

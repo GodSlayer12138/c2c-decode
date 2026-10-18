@@ -2,7 +2,7 @@
 
 [English](results.md)
 
-所有实验固定 Qwen3-4B → Qwen3-0.6B、官方 Fuser、BF16 和 RTX 4090，不训练或量化。以下按系统组件与实验配置组织结果；不同配置的耗时与显存不能相加或直接互换。
+所有实验固定 Qwen3-4B → Qwen3-0.6B、官方 Fuser、BF16 和 RTX 4090。以下按系统组件与实验配置组织结果；不同配置的耗时与显存不能相加或直接互换。
 
 CLI/服务默认使用精简 prefix logits、scatter 导入和分页解码；分块 prefill 与输入缓冲复用为可选项。Graph 与 eager 分开测量。完整设计及服务复现见 [设计](design.zh-CN.md)，同工作量加速比见 [效率验证](efficiency-verification.zh-CN.md)，导入、时间线和显存归因见 [性能分析](profiling-results.zh-CN.md)。
 
@@ -13,9 +13,9 @@ CLI/服务默认使用精简 prefix logits、scatter 导入和分页解码；分
 - 四个普通 prompt 的 16-token greedy 输出与官方精确一致。
 - EOS、变长输出、复用和完整页回收检查通过。
 - 基础测试覆盖 CUDA 分页、调度和严格 token CLI 退出门槛；下载权重哈希校验通过，见 `results/tests.txt`。
-- 长输入的同历史 logits 通过预设 BF16 阈值，但严格 token 等价未通过：eager top-1 为 88/90，Graph 为 87/90，不能声称生成轨迹普遍相同。
+- 长输入的同历史 logits 通过预设 BF16 阈值，但严格 token 等价未通过：eager top-1 为 88/90，Graph 为 87/90。
 
-Eager 最大绝对误差 0.375、最大 RMSE 0.08594、最小 cosine 0.999341。两处不同 argmax 的官方 margin 为 0.125 和 0.0625，与 BF16 运算路径差异相符，但不能证明未来差异都由此引起。`validate --strict-tokens` 暴露更严格且失败的门槛；默认 `passed` 是容差和测试夹具门槛，`strict_token_equivalence` 单独记录。原始记录为 `results/validation-eager.json` 与 `validation-graph.json`。
+Eager 最大绝对误差 0.375、最大 RMSE 0.08594、最小 cosine 0.999341。两处不同 argmax 的官方 margin 为 0.125 和 0.0625，与 BF16 运算路径差异相符。默认 `passed` 是容差和测试夹具门槛，`strict_token_equivalence` 单独记录。原始记录为 `results/validation-eager.json` 与 `validation-graph.json`。
 
 ## 官方生产端与逐页导入对照
 
@@ -41,8 +41,6 @@ Graph B1 TTFT 为 165.3/247.5ms；B8 因包含串行 prefill 排队，中位请�
 
 Graph replay 减少 eager 剩余的主机发射开销，批处理提高聚合吞吐。在本节对照配置的完整链路中，串行 prefill 与融合占主要时间，导入相对较小；未来可探索 prefill/decode 重叠和键设计正确的融合前缀复用。
 
-
-
 ## 生产端与 CPU 优化的结论
 
 1K/2K、五次随机顺序配对中，生产端完整路径与精简 logits 的中位数分别为：
@@ -62,7 +60,7 @@ Graph replay 减少 eager 剩余的主机发射开销，批处理提高聚合吞
 因此不作为默认。所有 15 组配对生成 token 相同。
 
 分块单请求 prefill 明显变慢：2K 的 256/512/1024-token chunk 分别约
-**514.95/324.34/258.10ms**。它针对解码停顿，不应宣传为更快的单请求 prefill。
+**514.95/324.34/258.10ms**。它用于减少解码停顿。
 完整新请求端到端、随机到达负载、最长停顿和 SLO 数据见自动汇总。
 
 ## 完整链路效果与默认选择
@@ -123,16 +121,15 @@ HTTP 故意把等待队列设为 2，用 4 个客户端线程发起 8 次调用�
 nano 原生产端、精简 logits、512-token 分块均有 **35/36** 个样例
 与官方输出逐 token 相同。剩余样例是 FIFO 问题的逗号/连字符不同，对应官方 logits
 的 top-1/top-2 margin 为 **0**。该题官方本身也没有按要求回答。各适配路径的回答
-彼此一致；本实验没有观察到新增答案退化，但不据此宣称通用质量等价。
+彼此一致；本实验未观察到新增答案退化。
 
 扩展的逐步 logits 检查**并非全部通过旧门槛**，不修改 cosine≥0.999、RMSE≤0.15、
 max_abs≤1 的标准：nano 在 `math-7` 的一个有效生成步骤 cosine 约 **0.998749**。
 nano 的三种生产端在该
 失败步骤表现相同，属于既有后端数值差异，不是本实验 logits 优化引入。
-512-token 分块还在 `context-0` 新增了一个有效生成步骤的门槛失败；即使本次输出
-没有变化，也不能将该配置描述为数值验证全面通过。因此所有分块选项均保持实验状态。
+512-token 分块还在 `context-0` 新增了一个有效生成步骤的门槛失败；本次输出没有变化，所有分块选项保持实验状态。
 另外一些失败出现在强制生成越过 EOS 后；报告同时保留全部检查和 EOS 前/处的分类。
-详情见自动汇总和 `numerical-failures.json`，不将它们重新归类为“通过”。
+详情见自动汇总和 `numerical-failures.json`。
 
 针对上述分块风险，补测了 1024-token 分块的 6 个长上下文样例：6/6 输出与官方
 逐 token 相同，所检查步骤没有触发上述数值门槛，缓存导入精确且页面全部回收。

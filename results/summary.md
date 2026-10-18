@@ -24,4 +24,4 @@ Official C2C cached decode baseline (batch=1; no second receiver or paged pool):
 
 TTFT includes FIFO queueing and cache import. Prefill batch is always one.
 Decode throughput excludes each request's first token; E2E includes all phases.
-Peak allocated is PyTorch memory, not total device usage. No claim of production serving performance.
+Peak allocated is PyTorch memory, not total device usage.

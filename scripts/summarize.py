@@ -35,6 +35,6 @@ if baseline:
                      f"{max(r['peak_allocated_bytes'] for r in group)/2**30:.2f} |")
 lines += ["", "TTFT includes FIFO queueing and cache import. Prefill batch is always one.",
           "Decode throughput excludes each request's first token; E2E includes all phases.",
-          "Peak allocated is PyTorch memory, not total device usage. No claim of production serving performance.", ""]
+          "Peak allocated is PyTorch memory, not total device usage.", ""]
 write_reports(Path(args.output), "\n".join(lines))
 print("\n".join(lines))

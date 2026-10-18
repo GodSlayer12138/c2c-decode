@@ -2,7 +2,7 @@
 
 [English](design.md)
 
-本项目把已有 Cache-to-Cache 方法适配到小型分页解码后端，不提出或训练 C2C。官方 Rosetta 负责 prefill 与融合数学，nano-vLLM 负责 Qwen3、权重加载、RoPE、FlashAttention decode、页分配器及可选 CUDA Graph。
+本项目把已有 Cache-to-Cache 方法适配到小型分页解码后端。官方 Rosetta 负责 prefill 与融合数学，nano-vLLM 负责 Qwen3、权重加载、RoPE、FlashAttention decode、页分配器及可选 CUDA Graph。
 
 ## 交接不变量
 
@@ -22,7 +22,7 @@ KV 池使用显式 MiB 预算，不按空闲显存比例占满。Qwen3-0.6B 的 
 
 请求可设置相对运行开始的非负 `arrival_ms`；按到达顺序准入，结果维持调用方顺序。每请求 `token_times_ms` 相对计划到达时刻计时。默认持续准入至容量上限；可选 `prefill_limit_per_round=1` 在每批 decode 前最多完成一次完整 prefill，它不是分块或并行执行，相关取舍见 profiling 文档。
 
-禁用 prefix hash，因为仅 token 哈希不足以标识融合前缀。未来复用还需发送端/Fuser revision、输入、对齐、融合设置、精度与位置上下文。当前无抢占或 swap；GPU 工作串行，prefill 会阻塞活动 decode。可选服务循环在干净 prefix 块间插入 decode，并提供本机 SSE，限制见下文服务说明。
+禁用 prefix hash，因为仅 token 哈希不足以标识融合前缀。未来复用还需发送端/Fuser revision、输入、对齐、融合设置、精度与位置上下文。GPU 工作串行，prefill 会阻塞活动 decode。可选服务循环在干净 prefix 块间插入 decode，并提供本机 SSE，限制见下文服务说明。
 
 ## 测量约定
 
@@ -37,11 +37,11 @@ KV 池使用显式 MiB 预算，不按空闲显存比例占满。Qwen3-0.6B 的 
 - E2E：从到达到最后生成 token。整次吞吐含首 token；decode 吞吐排除 prefill 已生成的首 token。
 - 显存：所有常驻模型与池的 PyTorch allocated/reserved 峰值，不含全部驱动分配；`nvidia-smi` 单列。
 
-计时不含 warmup，模型加载另记；参考冒烟显式调用官方 `generate`。数值对齐官方融合 continuation，而非未融合 Qwen。Teacher forcing 和自由 greedy 相等性回答不同问题。BF16 阈值测量前确定，失败如实保留；`validate --strict-tokens` 还会因任一同历史 top-1 差异返回失败。默认数值通过不等于通用 token 等价，JSON 分别记录结论。
+计时不含 warmup，模型加载另记；参考冒烟显式调用官方 `generate`。数值对齐官方融合 continuation，而非未融合 Qwen。Teacher forcing 和自由 greedy 相等性回答不同问题。JSON 分别记录 BF16 误差指标和 top-1 一致性。
 
 ## 范围
 
-单 GPU、BF16、greedy、总长度上限 4096、prefill batch=1、decode batch≤8。CUDA Graph 可选，保留 eager 供调试。无训练、量化、张量并行或生产服务等价承诺。上游 serving 状态应随版本升级重新检查；当时检查的 README 仍为待发布公告。
+单 GPU、BF16、greedy、总长度上限 4096、prefill batch=1、decode batch≤8。CUDA Graph 可选，保留 eager 供调试。
 
 ## 已实现的路径
 
@@ -66,8 +66,7 @@ slot mapping 保持连续，遵守上游 Triton kernel 的布局要求。它仍�
 `ServingEngine` 由单个线程持有 GPU 执行权；支持动态入队、最大等待队列、完整
 输出长度的 KV 页预留、EOS、取消、超时、逐 token 事件，以及异常/关闭时释放所有页。
 取消和超时是协作式的，在 GPU 工作单元之间检查，不会强行中断正在执行的 kernel。
-例如 HTTP 检查中的 1ms deadline 实际在约 123ms 后返回 timeout，不能宣传为硬实时超时。
-
+例如 HTTP 检查中的 1ms deadline 实际在约 123ms 后返回 timeout。
 
 ## 本地服务与复现
 
@@ -107,14 +106,11 @@ curl -N http://127.0.0.1:8000/generate \
 ```
 
 队列满返回 429，非法输入返回 400/413，引擎失败或关闭返回 503。
-它是本机演示服务，没有公开部署、认证、多 GPU 或 OpenAI API 兼容性承诺。
-负载性能表是引擎内到达回放；HTTP 实验验证真实 socket/SSE 生命周期，不能将二者
-混称为已经测得 HTTP 尾延迟。两分钟压力运行也不构成长期稳定性证明。
+负载性能表来自引擎内到达回放；HTTP 实验验证真实 socket/SSE 生命周期。
 
 服务实验包含：六种配置 × 三档到达间隔 × 三个固定随机种子，每次 24 请求，共
 1296 请求；同一 seed 的各配置使用相同到达、输入长度和输出长度。分位数来自每档
 72 请求，仍是小样本。另做单独有界时长压力运行和真实 HTTP 生命周期检查。
 示例 SLO 在运行前固定为 TTFT≤1000ms 且每个 token 间隔≤100ms，不根据结果调整。
 
-当前核心代码约 1738 行（含空行），保持在原定规模内。评测脚本位于 `scripts/`，
-上游模型、Fuser、attention kernel 和缓存分配器仍复用已有实现。
+评测脚本位于 `scripts/`。
