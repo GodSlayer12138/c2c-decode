@@ -1,0 +1,241 @@
+{
+  "queue_full_status": 429,
+  "health": {
+    "ready": true
+  },
+  "cancel_api": {
+    "cancelled": true
+  },
+  "cancel_stream": {
+    "event": "done",
+    "reason": "cancelled",
+    "elapsed_ms": 147.81644940376282
+  },
+  "timeout_stream": {
+    "event": "done",
+    "reason": "timeout",
+    "elapsed_ms": 123.37499484419823
+  },
+  "concurrent": [
+    [
+      {
+        "event": "accepted",
+        "request_id": "68f3d115dc474768bc8e4707317043b2"
+      },
+      {
+        "event": "token",
+        "token_id": 785,
+        "index": 1,
+        "elapsed_ms": 145.6424854695797,
+        "text": "The"
+      },
+      {
+        "event": "token",
+        "token_id": 4226,
+        "index": 2,
+        "elapsed_ms": 389.89489153027534,
+        "text": "The answer"
+      },
+      {
+        "event": "token",
+        "token_id": 374,
+        "index": 3,
+        "elapsed_ms": 393.0621035397053,
+        "text": "The answer is"
+      },
+      {
+        "event": "token",
+        "token_id": 220,
+        "index": 4,
+        "elapsed_ms": 396.0084021091461,
+        "text": "The answer is "
+      },
+      {
+        "event": "token",
+        "token_id": 17,
+        "index": 5,
+        "elapsed_ms": 398.9267461001873,
+        "text": "The answer is 2"
+      },
+      {
+        "event": "token",
+        "token_id": 13,
+        "index": 6,
+        "elapsed_ms": 401.8638990819454,
+        "text": "The answer is 2."
+      },
+      {
+        "event": "token",
+        "token_id": 151645,
+        "index": 7,
+        "elapsed_ms": 404.75356951355934,
+        "text": "The answer is 2."
+      },
+      {
+        "event": "done",
+        "reason": "eos",
+        "elapsed_ms": 404.76906299591064
+      }
+    ],
+    [
+      {
+        "event": "accepted",
+        "request_id": "e50630cc44f7463689174720156cd37f"
+      },
+      {
+        "event": "token",
+        "token_id": 785,
+        "index": 1,
+        "elapsed_ms": 265.32986760139465,
+        "text": "The"
+      },
+      {
+        "event": "token",
+        "token_id": 4226,
+        "index": 2,
+        "elapsed_ms": 387.4942660331726,
+        "text": "The answer"
+      },
+      {
+        "event": "token",
+        "token_id": 311,
+        "index": 3,
+        "elapsed_ms": 390.6595893204212,
+        "text": "The answer to"
+      },
+      {
+        "event": "token",
+        "token_id": 220,
+        "index": 4,
+        "elapsed_ms": 393.6062455177307,
+        "text": "The answer to "
+      },
+      {
+        "event": "token",
+        "token_id": 16,
+        "index": 5,
+        "elapsed_ms": 396.5238519012928,
+        "text": "The answer to 1"
+      },
+      {
+        "event": "token",
+        "token_id": 10,
+        "index": 6,
+        "elapsed_ms": 399.460855871439,
+        "text": "The answer to 1+"
+      },
+      {
+        "event": "token",
+        "token_id": 17,
+        "index": 7,
+        "elapsed_ms": 402.36278995871544,
+        "text": "The answer to 1+2"
+      },
+      {
+        "event": "token",
+        "token_id": 374,
+        "index": 8,
+        "elapsed_ms": 405.79258278012276,
+        "text": "The answer to 1+2 is"
+      },
+      {
+        "event": "done",
+        "reason": "length",
+        "elapsed_ms": 405.8051146566868
+      }
+    ],
+    [
+      {
+        "event": "accepted",
+        "request_id": "d0368a0e89bc4e0dad6189bb0096c545"
+      },
+      {
+        "event": "token",
+        "token_id": 785,
+        "index": 1,
+        "elapsed_ms": 351.579662412405,
+        "text": "The"
+      },
+      {
+        "event": "token",
+        "token_id": 4226,
+        "index": 2,
+        "elapsed_ms": 354.34645414352417,
+        "text": "The answer"
+      },
+      {
+        "event": "token",
+        "token_id": 374,
+        "index": 3,
+        "elapsed_ms": 357.5115315616131,
+        "text": "The answer is"
+      },
+      {
+        "event": "token",
+        "token_id": 220,
+        "index": 4,
+        "elapsed_ms": 360.45801267027855,
+        "text": "The answer is "
+      },
+      {
+        "event": "token",
+        "token_id": 19,
+        "index": 5,
+        "elapsed_ms": 363.3760027587414,
+        "text": "The answer is 4"
+      },
+      {
+        "event": "token",
+        "token_id": 13,
+        "index": 6,
+        "elapsed_ms": 366.31280928850174,
+        "text": "The answer is 4."
+      },
+      {
+        "event": "token",
+        "token_id": 151645,
+        "index": 7,
+        "elapsed_ms": 369.21514198184013,
+        "text": "The answer is 4."
+      },
+      {
+        "event": "done",
+        "reason": "eos",
+        "elapsed_ms": 369.22096088528633
+      }
+    ],
+    [
+      {
+        "event": "rejected",
+        "status": 429
+      }
+    ],
+    [
+      {
+        "event": "rejected",
+        "status": 429
+      }
+    ],
+    [
+      {
+        "event": "rejected",
+        "status": 429
+      }
+    ],
+    [
+      {
+        "event": "rejected",
+        "status": 429
+      }
+    ],
+    [
+      {
+        "event": "rejected",
+        "status": 429
+      }
+    ]
+  ],
+  "disconnect_retired": true,
+  "engine_error": null,
+  "free_blocks_after": 73
+}

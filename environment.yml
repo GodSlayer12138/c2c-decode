@@ -1,0 +1,19 @@
+name: c2c-decode
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - torch==2.8.0
+      - transformers==4.52.4
+      - triton==3.4.0
+      - huggingface-hub==0.35.3
+      - safetensors==0.6.2
+      - accelerate
+      - einops
+      - numpy
+      - xxhash
+      - pytest
+# Install flash-attn==2.8.3 after PyTorch, using a matching prebuilt wheel or
+# a CUDA development toolkit. The validated AutoDL image provides that wheel.

@@ -1,0 +1,13 @@
+.ssh_known_hosts
+*.tar.gz
+upstream/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+models/
+*.log
+.env
+.cache/
+tmp/pdfs/

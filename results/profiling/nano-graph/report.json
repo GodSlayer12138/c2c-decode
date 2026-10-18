@@ -1,0 +1,1278 @@
+{
+  "args": {
+    "backend": "nano",
+    "models": "models.lock.json",
+    "eager": false,
+    "full_graph": false,
+    "import_mode": "scatter",
+    "output_dir": "results/profiling/nano-graph"
+  },
+  "backend": {
+    "pool_bytes": 2143289344,
+    "num_blocks": 73,
+    "block_size": 256,
+    "graph": true
+  },
+  "cases": [
+    {
+      "length": 1024,
+      "batch": 1,
+      "output_tokens": 16,
+      "unprofiled_trials": [
+        {
+          "handoff_decode_ms": 35.095781087875366,
+          "import_ms": 1.0574236512184143,
+          "tokens": [
+            [
+              8420,
+              374,
+              264,
+              803,
+              11682,
+              16148,
+              315,
+              3170,
+              264,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304
+            ]
+          ],
+          "all_blocks_reclaimed": true
+        },
+        {
+          "handoff_decode_ms": 35.00862047076225,
+          "import_ms": 0.9896494448184967,
+          "tokens": [
+            [
+              8420,
+              374,
+              264,
+              803,
+              11682,
+              16148,
+              315,
+              3170,
+              264,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304
+            ]
+          ],
+          "all_blocks_reclaimed": true
+        },
+        {
+          "handoff_decode_ms": 35.73925048112869,
+          "import_ms": 0.9789392352104187,
+          "tokens": [
+            [
+              8420,
+              374,
+              264,
+              803,
+              11682,
+              16148,
+              315,
+              3170,
+              264,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304
+            ]
+          ],
+          "all_blocks_reclaimed": true
+        },
+        {
+          "handoff_decode_ms": 34.941963851451874,
+          "import_ms": 0.9780600666999817,
+          "tokens": [
+            [
+              8420,
+              374,
+              264,
+              803,
+              11682,
+              16148,
+              315,
+              3170,
+              264,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304
+            ]
+          ],
+          "all_blocks_reclaimed": true
+        },
+        {
+          "handoff_decode_ms": 34.99102592468262,
+          "import_ms": 0.9747780859470367,
+          "tokens": [
+            [
+              8420,
+              374,
+              264,
+              803,
+              11682,
+              16148,
+              315,
+              3170,
+              264,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304
+            ]
+          ],
+          "all_blocks_reclaimed": true
+        }
+      ],
+      "host_stages": {
+        "import": {
+          "calls": 5,
+          "total_ms": 4.8706792294979095,
+          "median_ms": 0.9608976542949677,
+          "per_decode_step_ms": 0.0649423897266388
+        },
+        "prepare_inputs": {
+          "calls": 75,
+          "total_ms": 6.722796708345413,
+          "median_ms": 0.0831708312034607,
+          "per_decode_step_ms": 0.08963728944460551
+        },
+        "vocabulary_projection": {
+          "calls": 75,
+          "total_ms": 2.402905374765396,
+          "median_ms": 0.029899179935455322,
+          "per_decode_step_ms": 0.032038738330205284
+        },
+        "model_call": {
+          "calls": 75,
+          "total_ms": 8.397672325372696,
+          "median_ms": 0.10572746396064758,
+          "per_decode_step_ms": 0.11196896433830261
+        }
+      },
+      "trace": {
+        "profiled_region_ms": 48.63832,
+        "gpu_events": 6226,
+        "kernels": 6045,
+        "observed_gpu_active_ms": 32.20948364257813,
+        "observed_gpu_active_fraction": 0.6622244280348936,
+        "largest_observed_gpu_gap_ms": 0.517345947265625,
+        "top_kernels": [
+          {
+            "name": "std::enable_if<!(false), void>::type internal::gemvx::kernel<int, int, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, false, true, true, false, 6, false, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float> >(cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float>)",
+            "count": 1695,
+            "gpu_us": 22015.385000000017
+          },
+          {
+            "name": "void flash::flash_fwd_splitkv_kernel<Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t> >, false, false, false, false, true, false, true, false>(flash::Flash_fwd_params)",
+            "count": 420,
+            "gpu_us": 3579.0790000000034
+          },
+          {
+            "name": "void flash::flash_fwd_splitkv_combine_kernel<Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t> >, 4, 5, true>(flash::Flash_fwd_params)",
+            "count": 420,
+            "gpu_us": 2441.4200000000014
+          },
+          {
+            "name": "triton_per_fused__to_copy_add_mean_mul_pow_rsqrt_0",
+            "count": 1695,
+            "gpu_us": 1807.409000000006
+          },
+          {
+            "name": "triton_poi_fused__to_copy_cat_0",
+            "count": 420,
+            "gpu_us": 435.1880000000002
+          },
+          {
+            "name": "triton_poi_fused__to_copy_cat_1",
+            "count": 420,
+            "gpu_us": 429.8020000000005
+          },
+          {
+            "name": "store_kvcache_kernel",
+            "count": 420,
+            "gpu_us": 427.07700000000085
+          },
+          {
+            "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",
+            "count": 56,
+            "gpu_us": 425.7240000000001
+          },
+          {
+            "name": "triton_poi_fused_mul_silu_0",
+            "count": 420,
+            "gpu_us": 370.97599999999903
+          },
+          {
+            "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<c10::BFloat16, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4> >(at::native::ReduceOp<c10::BFloat16, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4>)",
+            "count": 15,
+            "gpu_us": 84.222
+          },
+          {
+            "name": "void at::native::(anonymous namespace)::indexSelectSmallIndex<c10::BFloat16, long, unsigned int, 2, 2, -2>(at::cuda::detail::TensorInfo<c10::BFloat16, unsigned int>, at::cuda::detail::TensorInfo<c10::BFloat16 const, unsigned int>, at::cuda::detail::TensorInfo<long const, unsigned int>, int, int, unsigned int, long)",
+            "count": 15,
+            "gpu_us": 33.214
+          },
+          {
+            "name": "void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<int>, std::array<char*, 1ul> >(int, at::native::FillFunctor<int>, std::array<char*, 1ul>)",
+            "count": 30,
+            "gpu_us": 24.351000000000013
+          },
+          {
+            "name": "memcpy32_post",
+            "count": 15,
+            "gpu_us": 12.480000000000004
+          },
+          {
+            "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",
+            "count": 1,
+            "gpu_us": 3.073
+          },
+          {
+            "name": "void at::native::vectorized_elementwise_kernel<2, at::native::BUnaryFunctor<long, long, long, at::native::binary_internal::div_floor_kernel_cuda(at::TensorIteratorBase&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long, long)#1}>, std::array<char*, 2ul> >(int, at::native::BUnaryFunctor<long, long, long, at::native::binary_internal::div_floor_kernel_cuda(at::TensorIteratorBase&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long, long)#1}>, std::array<char*, 2ul>)",
+            "count": 1,
+            "gpu_us": 1.92
+          },
+          {
+            "name": "void at::native::vectorized_elementwise_kernel<2, at::native::BUnaryFunctor<long, long, long, at::native::remainder_kernel_cuda(at::TensorIteratorBase&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long, long)#1}>, std::array<char*, 2ul> >(int, at::native::BUnaryFunctor<long, long, long, at::native::remainder_kernel_cuda(at::TensorIteratorBase&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long, long)#1}>, std::array<char*, 2ul>)",
+            "count": 1,
+            "gpu_us": 1.537
+          },
+          {
+            "name": "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, function_traits<at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}>::result_type*)",
+            "count": 1,
+            "gpu_us": 0.96
+          }
+        ],
+        "runtime": [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 166,
+            "host_us": 30256.703999999994
+          },
+          {
+            "name": "cudaGraphLaunch",
+            "count": 15,
+            "host_us": 6249.697000000001
+          },
+          {
+            "name": "cudaLaunchKernel",
+            "count": 120,
+            "host_us": 791.7119999999999
+          },
+          {
+            "name": "cudaStreamIsCapturing",
+            "count": 90,
+            "host_us": 410.22
+          },
+          {
+            "name": "cudaMemsetAsync",
+            "count": 15,
+            "host_us": 102.49
+          },
+          {
+            "name": "cudaEventRecordWithFlags",
+            "count": 75,
+            "host_us": 85.74199999999998
+          },
+          {
+            "name": "cudaEventQuery",
+            "count": 75,
+            "host_us": 59.28500000000001
+          },
+          {
+            "name": "cudaDeviceSynchronize",
+            "count": 4,
+            "host_us": 40.558
+          },
+          {
+            "name": "cudaStreamSynchronize",
+            "count": 16,
+            "host_us": 35.84599999999999
+          },
+          {
+            "name": "cudaDriverGetVersion",
+            "count": 15,
+            "host_us": 1.8850000000000002
+          }
+        ]
+      }
+    },
+    {
+      "length": 2048,
+      "batch": 8,
+      "output_tokens": 16,
+      "unprofiled_trials": [
+        {
+          "handoff_decode_ms": 77.99450308084488,
+          "import_ms": 9.318489581346512,
+          "tokens": [
+            [
+              40,
+              1513,
+              944,
+              614,
+              264,
+              1661,
+              4226,
+              369,
+              419,
+              13,
+              151645,
+              198,
+              14582,
+              25,
+              3555,
+              374
+            ],
+            [
+              785,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13,
+              576,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13
+            ],
+            [
+              785,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13,
+              576,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              14582,
+              25
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              1576,
+              432,
+              6147,
+              369,
+              11050,
+              4938,
+              6240,
+              553,
+              49702
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              14582,
+              25
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              820,
+              271
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              820,
+              271
+            ]
+          ],
+          "all_blocks_reclaimed": true
+        },
+        {
+          "handoff_decode_ms": 76.50219276547432,
+          "import_ms": 9.26973670721054,
+          "tokens": [
+            [
+              40,
+              1513,
+              944,
+              614,
+              264,
+              1661,
+              4226,
+              369,
+              419,
+              13,
+              151645,
+              198,
+              14582,
+              25,
+              3555,
+              374
+            ],
+            [
+              785,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13,
+              576,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13
+            ],
+            [
+              785,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13,
+              576,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              14582,
+              25
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              1576,
+              432,
+              6147,
+              369,
+              11050,
+              4938,
+              6240,
+              553,
+              49702
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              14582,
+              25
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              820,
+              271
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              820,
+              271
+            ]
+          ],
+          "all_blocks_reclaimed": true
+        },
+        {
+          "handoff_decode_ms": 76.52098312973976,
+          "import_ms": 9.108111262321472,
+          "tokens": [
+            [
+              40,
+              1513,
+              944,
+              614,
+              264,
+              1661,
+              4226,
+              369,
+              419,
+              13,
+              151645,
+              198,
+              14582,
+              25,
+              3555,
+              374
+            ],
+            [
+              785,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13,
+              576,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13
+            ],
+            [
+              785,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13,
+              576,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              14582,
+              25
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              1576,
+              432,
+              6147,
+              369,
+              11050,
+              4938,
+              6240,
+              553,
+              49702
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              14582,
+              25
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              820,
+              271
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              820,
+              271
+            ]
+          ],
+          "all_blocks_reclaimed": true
+        },
+        {
+          "handoff_decode_ms": 76.94069668650627,
+          "import_ms": 9.238310158252716,
+          "tokens": [
+            [
+              40,
+              1513,
+              944,
+              614,
+              264,
+              1661,
+              4226,
+              369,
+              419,
+              13,
+              151645,
+              198,
+              14582,
+              25,
+              3555,
+              374
+            ],
+            [
+              785,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13,
+              576,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13
+            ],
+            [
+              785,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13,
+              576,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              14582,
+              25
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              1576,
+              432,
+              6147,
+              369,
+              11050,
+              4938,
+              6240,
+              553,
+              49702
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              14582,
+              25
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              820,
+              271
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              820,
+              271
+            ]
+          ],
+          "all_blocks_reclaimed": true
+        },
+        {
+          "handoff_decode_ms": 76.49668678641319,
+          "import_ms": 9.198222309350967,
+          "tokens": [
+            [
+              40,
+              1513,
+              944,
+              614,
+              264,
+              1661,
+              4226,
+              369,
+              419,
+              13,
+              151645,
+              198,
+              14582,
+              25,
+              3555,
+              374
+            ],
+            [
+              785,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13,
+              576,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13
+            ],
+            [
+              785,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13,
+              576,
+              6500,
+              10533,
+              6529,
+              6894,
+              323,
+              2750,
+              13
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              14582,
+              25
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              1576,
+              432,
+              6147,
+              369,
+              11050,
+              4938,
+              6240,
+              553,
+              49702
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              14582,
+              25
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              820,
+              271
+            ],
+            [
+              785,
+              281,
+              3279,
+              84648,
+              6500,
+              374,
+              5390,
+              304,
+              825,
+              2805,
+              11652,
+              13,
+              151645,
+              198,
+              820,
+              271
+            ]
+          ],
+          "all_blocks_reclaimed": true
+        }
+      ],
+      "host_stages": {
+        "import": {
+          "calls": 40,
+          "total_ms": 45.939281582832336,
+          "median_ms": 1.1365488171577454,
+          "per_decode_step_ms": 0.6125237544377645
+        },
+        "prepare_inputs": {
+          "calls": 75,
+          "total_ms": 9.86453890800476,
+          "median_ms": 0.12636184692382812,
+          "per_decode_step_ms": 0.13152718544006348
+        },
+        "vocabulary_projection": {
+          "calls": 75,
+          "total_ms": 3.444235771894455,
+          "median_ms": 0.04388764500617981,
+          "per_decode_step_ms": 0.0459231436252594
+        },
+        "model_call": {
+          "calls": 75,
+          "total_ms": 16.340777277946472,
+          "median_ms": 0.21192431449890137,
+          "per_decode_step_ms": 0.21787703037261963
+        }
+      },
+      "trace": {
+        "profiled_region_ms": 92.64925500000001,
+        "gpu_events": 7073,
+        "kernels": 6900,
+        "observed_gpu_active_ms": 68.48522290039062,
+        "observed_gpu_active_fraction": 0.7391880582352295,
+        "largest_observed_gpu_gap_ms": 0.707906982421875,
+        "top_kernels": [
+          {
+            "name": "void flash::flash_fwd_splitkv_kernel<Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t> >, false, false, false, false, true, false, true, false>(flash::Flash_fwd_params)",
+            "count": 420,
+            "gpu_us": 32151.765999999978
+          },
+          {
+            "name": "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8>(cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8::Params)",
+            "count": 1695,
+            "gpu_us": 24991.390000000014
+          },
+          {
+            "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",
+            "count": 448,
+            "gpu_us": 5546.288999999995
+          },
+          {
+            "name": "triton_per_fused__to_copy_add_mean_mul_pow_rsqrt_0",
+            "count": 1695,
+            "gpu_us": 1974.0809999999801
+          },
+          {
+            "name": "void flash::flash_fwd_splitkv_combine_kernel<Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t> >, 4, 2, true>(flash::Flash_fwd_params)",
+            "count": 420,
+            "gpu_us": 1018.6549999999982
+          },
+          {
+            "name": "triton_poi_fused__to_copy_cat_0",
+            "count": 420,
+            "gpu_us": 501.54600000000295
+          },
+          {
+            "name": "triton_poi_fused__to_copy_cat_1",
+            "count": 420,
+            "gpu_us": 486.7199999999986
+          },
+          {
+            "name": "void cublasLt::splitKreduce_kernel<32, 16, int, __nv_bfloat16, __nv_bfloat16, float, __nv_bfloat16, false, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, true, false, false>(cublasLt::cublasSplitKParams<float>, __nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16*, __nv_bfloat16*, float const*, float const*, __nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16*, void*, long, float*, int*, float*, float*, float const*, float const*, float const*, float const*, float const*)",
+            "count": 420,
+            "gpu_us": 481.4689999999984
+          },
+          {
+            "name": "store_kvcache_kernel",
+            "count": 420,
+            "gpu_us": 480.03199999999833
+          },
+          {
+            "name": "triton_poi_fused_mul_silu_0",
+            "count": 420,
+            "gpu_us": 401.69299999999794
+          },
+          {
+            "name": "void at::native::(anonymous namespace)::indexSelectSmallIndex<c10::BFloat16, long, unsigned int, 2, 2, -2>(at::cuda::detail::TensorInfo<c10::BFloat16, unsigned int>, at::cuda::detail::TensorInfo<c10::BFloat16 const, unsigned int>, at::cuda::detail::TensorInfo<long const, unsigned int>, int, int, unsigned int, long)",
+            "count": 15,
+            "gpu_us": 123.137
+          },
+          {
+            "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<c10::BFloat16, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4> >(at::native::ReduceOp<c10::BFloat16, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4>)",
+            "count": 15,
+            "gpu_us": 116.768
+          },
+          {
+            "name": "void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<int>, std::array<char*, 1ul> >(int, at::native::FillFunctor<int>, std::array<char*, 1ul>)",
+            "count": 30,
+            "gpu_us": 24.22400000000001
+          },
+          {
+            "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",
+            "count": 8,
+            "gpu_us": 21.759
+          },
+          {
+            "name": "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#3}::operator()() const::{lambda(int)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#3}::operator()() const::{lambda(int)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#3}::operator()() const::{lambda(int)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#3}::operator()() const::{lambda(int)#1} const&)::{lambda(int)#1})",
+            "count": 15,
+            "gpu_us": 19.008
+          },
+          {
+            "name": "void at::native::vectorized_elementwise_kernel<2, at::native::BUnaryFunctor<long, long, long, at::native::binary_internal::div_floor_kernel_cuda(at::TensorIteratorBase&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long, long)#1}>, std::array<char*, 2ul> >(int, at::native::BUnaryFunctor<long, long, long, at::native::binary_internal::div_floor_kernel_cuda(at::TensorIteratorBase&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long, long)#1}>, std::array<char*, 2ul>)",
+            "count": 8,
+            "gpu_us": 15.713
+          },
+          {
+            "name": "void at::native::vectorized_elementwise_kernel<2, at::native::BUnaryFunctor<long, long, long, at::native::remainder_kernel_cuda(at::TensorIteratorBase&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long, long)#1}>, std::array<char*, 2ul> >(int, at::native::BUnaryFunctor<long, long, long, at::native::remainder_kernel_cuda(at::TensorIteratorBase&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long, long)#1}>, std::array<char*, 2ul>)",
+            "count": 8,
+            "gpu_us": 14.624
+          },
+          {
+            "name": "memcpy32_post",
+            "count": 15,
+            "gpu_us": 12.767000000000003
+          },
+          {
+            "name": "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, function_traits<at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}>::result_type*)",
+            "count": 8,
+            "gpu_us": 6.879999999999999
+          }
+        ],
+        "runtime": [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 158,
+            "host_us": 61177.52300000002
+          },
+          {
+            "name": "cudaGraphLaunch",
+            "count": 15,
+            "host_us": 6590.3049999999985
+          },
+          {
+            "name": "cudaLaunchKernel",
+            "count": 540,
+            "host_us": 2667.726999999998
+          },
+          {
+            "name": "cuLaunchKernel",
+            "count": 15,
+            "host_us": 155.62699999999998
+          },
+          {
+            "name": "cudaMemsetAsync",
+            "count": 15,
+            "host_us": 109.275
+          },
+          {
+            "name": "cudaEventRecordWithFlags",
+            "count": 75,
+            "host_us": 84.48299999999999
+          },
+          {
+            "name": "cudaStreamSynchronize",
+            "count": 23,
+            "host_us": 61.84799999999999
+          },
+          {
+            "name": "cudaEventQuery",
+            "count": 75,
+            "host_us": 59.61099999999999
+          },
+          {
+            "name": "cudaStreamIsCapturing",
+            "count": 90,
+            "host_us": 47.894999999999996
+          },
+          {
+            "name": "cudaDeviceSynchronize",
+            "count": 4,
+            "host_us": 38.344
+          },
+          {
+            "name": "cudaDeviceGetAttribute",
+            "count": 15,
+            "host_us": 10.228
+          },
+          {
+            "name": "cudaDriverGetVersion",
+            "count": 15,
+            "host_us": 1.7410000000000003
+          }
+        ]
+      }
+    }
+  ]
+}

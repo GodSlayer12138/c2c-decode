@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "c2c-decode"
+version = "0.1.0"
+description = "Official C2C fusion adapted to nano-vLLM paged decoding"
+requires-python = ">=3.10,<3.13"
+dependencies = ["torch>=2.6", "transformers==4.52.4", "accelerate", "safetensors", "huggingface-hub", "xxhash", "numpy", "einops"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+profile = ["matplotlib>=3.8,<4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+c2c_decode = ["report_translations.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["gpu: requires a CUDA GPU and downloaded models"]

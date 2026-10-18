@@ -1,0 +1,2955 @@
+{
+  "backend": "nano",
+  "cases": [
+    {
+      "id": "context-0",
+      "category": "context",
+      "prompt": "The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The access code of record ZETA-0 is 7319. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. What is the access code of record ZETA-0? Return only the number.",
+      "answer": "7319"
+    },
+    {
+      "id": "context-1",
+      "category": "context",
+      "prompt": "The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The access code of record ZETA-1 is 7320. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. What is the access code of record ZETA-1? Return only the number.",
+      "answer": "7320"
+    },
+    {
+      "id": "context-2",
+      "category": "context",
+      "prompt": "The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The access code of record ZETA-2 is 7321. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. What is the access code of record ZETA-2? Return only the number.",
+      "answer": "7321"
+    },
+    {
+      "id": "context-3",
+      "category": "context",
+      "prompt": "The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The access code of record ZETA-3 is 7322. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. What is the access code of record ZETA-3? Return only the number.",
+      "answer": "7322"
+    },
+    {
+      "id": "context-4",
+      "category": "context",
+      "prompt": "The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The access code of record ZETA-4 is 7323. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. What is the access code of record ZETA-4? Return only the number.",
+      "answer": "7323"
+    },
+    {
+      "id": "context-5",
+      "category": "context",
+      "prompt": "The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The access code of record ZETA-5 is 7324. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. The archive contains unrelated notes about desks, lamps, windows, and chairs. What is the access code of record ZETA-5? Return only the number.",
+      "answer": "7324"
+    }
+  ],
+  "rows": [
+    {
+      "id": "context-0",
+      "category": "context",
+      "mode": "official",
+      "prompt_tokens": 945,
+      "expected": "7319",
+      "text": "The access code of record ZETA-0 is 7319.",
+      "official_text": "The access code of record ZETA-0 is 7319.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        15,
+        374,
+        220,
+        22,
+        18,
+        16,
+        24,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        15,
+        374,
+        220,
+        22,
+        18,
+        16,
+        24,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.04448900744318962,
+          "max_abs": 0.15625,
+          "cosine": 0.9999153017997742,
+          "top1_match": true,
+          "margin": 5.9375
+        },
+        {
+          "rmse": 0.04185429587960243,
+          "max_abs": 0.1875,
+          "cosine": 0.9999594688415527,
+          "top1_match": true,
+          "margin": 9.9375
+        },
+        {
+          "rmse": 0.0534568689763546,
+          "max_abs": 0.171875,
+          "cosine": 0.9998762607574463,
+          "top1_match": true,
+          "margin": 3.625
+        },
+        {
+          "rmse": 0.030580077320337296,
+          "max_abs": 0.140625,
+          "cosine": 0.9999579787254333,
+          "top1_match": true,
+          "margin": 7.75
+        },
+        {
+          "rmse": 0.03898387402296066,
+          "max_abs": 0.15625,
+          "cosine": 0.9999186396598816,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.046188052743673325,
+          "max_abs": 0.201171875,
+          "cosine": 0.9999333024024963,
+          "top1_match": true,
+          "margin": 4.75
+        },
+        {
+          "rmse": 0.03290582075715065,
+          "max_abs": 0.1328125,
+          "cosine": 0.9998456239700317,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.03704538568854332,
+          "max_abs": 0.1953125,
+          "cosine": 0.999885082244873,
+          "top1_match": true,
+          "margin": 6.75
+        },
+        {
+          "rmse": 0.050271980464458466,
+          "max_abs": 0.25,
+          "cosine": 0.9997797012329102,
+          "top1_match": true,
+          "margin": 7.125
+        },
+        {
+          "rmse": 0.03684520721435547,
+          "max_abs": 0.15625,
+          "cosine": 0.9999052286148071,
+          "top1_match": true,
+          "margin": 5.125
+        },
+        {
+          "rmse": 0.033993128687143326,
+          "max_abs": 0.15625,
+          "cosine": 0.9998648166656494,
+          "top1_match": true,
+          "margin": 6.625
+        },
+        {
+          "rmse": 0.03803008049726486,
+          "max_abs": 0.16015625,
+          "cosine": 0.9997837543487549,
+          "top1_match": true,
+          "margin": 8.1875
+        },
+        {
+          "rmse": 0.035592012107372284,
+          "max_abs": 0.15625,
+          "cosine": 0.9998876452445984,
+          "top1_match": true,
+          "margin": 8.1875
+        },
+        {
+          "rmse": 0.029195422306656837,
+          "max_abs": 0.140625,
+          "cosine": 0.9999212026596069,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.029383789747953415,
+          "max_abs": 0.140625,
+          "cosine": 0.9999408721923828,
+          "top1_match": true,
+          "margin": 4.5
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-0",
+      "category": "context",
+      "mode": "lean",
+      "prompt_tokens": 945,
+      "expected": "7319",
+      "text": "The access code of record ZETA-0 is 7319.",
+      "official_text": "The access code of record ZETA-0 is 7319.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        15,
+        374,
+        220,
+        22,
+        18,
+        16,
+        24,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        15,
+        374,
+        220,
+        22,
+        18,
+        16,
+        24,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.04448900744318962,
+          "max_abs": 0.15625,
+          "cosine": 0.9999153017997742,
+          "top1_match": true,
+          "margin": 5.9375
+        },
+        {
+          "rmse": 0.04185429587960243,
+          "max_abs": 0.1875,
+          "cosine": 0.9999594688415527,
+          "top1_match": true,
+          "margin": 9.9375
+        },
+        {
+          "rmse": 0.0534568689763546,
+          "max_abs": 0.171875,
+          "cosine": 0.9998762607574463,
+          "top1_match": true,
+          "margin": 3.625
+        },
+        {
+          "rmse": 0.030580077320337296,
+          "max_abs": 0.140625,
+          "cosine": 0.9999579787254333,
+          "top1_match": true,
+          "margin": 7.75
+        },
+        {
+          "rmse": 0.03898387402296066,
+          "max_abs": 0.15625,
+          "cosine": 0.9999186396598816,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.046188052743673325,
+          "max_abs": 0.201171875,
+          "cosine": 0.9999333024024963,
+          "top1_match": true,
+          "margin": 4.75
+        },
+        {
+          "rmse": 0.03290582075715065,
+          "max_abs": 0.1328125,
+          "cosine": 0.9998456239700317,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.03704538568854332,
+          "max_abs": 0.1953125,
+          "cosine": 0.999885082244873,
+          "top1_match": true,
+          "margin": 6.75
+        },
+        {
+          "rmse": 0.050271980464458466,
+          "max_abs": 0.25,
+          "cosine": 0.9997797012329102,
+          "top1_match": true,
+          "margin": 7.125
+        },
+        {
+          "rmse": 0.03684520721435547,
+          "max_abs": 0.15625,
+          "cosine": 0.9999052286148071,
+          "top1_match": true,
+          "margin": 5.125
+        },
+        {
+          "rmse": 0.033993128687143326,
+          "max_abs": 0.15625,
+          "cosine": 0.9998648166656494,
+          "top1_match": true,
+          "margin": 6.625
+        },
+        {
+          "rmse": 0.03803008049726486,
+          "max_abs": 0.16015625,
+          "cosine": 0.9997837543487549,
+          "top1_match": true,
+          "margin": 8.1875
+        },
+        {
+          "rmse": 0.035592012107372284,
+          "max_abs": 0.15625,
+          "cosine": 0.9998876452445984,
+          "top1_match": true,
+          "margin": 8.1875
+        },
+        {
+          "rmse": 0.029195422306656837,
+          "max_abs": 0.140625,
+          "cosine": 0.9999212026596069,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.029383789747953415,
+          "max_abs": 0.140625,
+          "cosine": 0.9999408721923828,
+          "top1_match": true,
+          "margin": 4.5
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-0",
+      "category": "context",
+      "mode": "chunk-1024",
+      "prompt_tokens": 945,
+      "expected": "7319",
+      "text": "The access code of record ZETA-0 is 7319.",
+      "official_text": "The access code of record ZETA-0 is 7319.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        15,
+        374,
+        220,
+        22,
+        18,
+        16,
+        24,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        15,
+        374,
+        220,
+        22,
+        18,
+        16,
+        24,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.04448900744318962,
+          "max_abs": 0.15625,
+          "cosine": 0.9999153017997742,
+          "top1_match": true,
+          "margin": 5.9375
+        },
+        {
+          "rmse": 0.04185429587960243,
+          "max_abs": 0.1875,
+          "cosine": 0.9999594688415527,
+          "top1_match": true,
+          "margin": 9.9375
+        },
+        {
+          "rmse": 0.0534568689763546,
+          "max_abs": 0.171875,
+          "cosine": 0.9998762607574463,
+          "top1_match": true,
+          "margin": 3.625
+        },
+        {
+          "rmse": 0.030580077320337296,
+          "max_abs": 0.140625,
+          "cosine": 0.9999579787254333,
+          "top1_match": true,
+          "margin": 7.75
+        },
+        {
+          "rmse": 0.03898387402296066,
+          "max_abs": 0.15625,
+          "cosine": 0.9999186396598816,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.046188052743673325,
+          "max_abs": 0.201171875,
+          "cosine": 0.9999333024024963,
+          "top1_match": true,
+          "margin": 4.75
+        },
+        {
+          "rmse": 0.03290582075715065,
+          "max_abs": 0.1328125,
+          "cosine": 0.9998456239700317,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.03704538568854332,
+          "max_abs": 0.1953125,
+          "cosine": 0.999885082244873,
+          "top1_match": true,
+          "margin": 6.75
+        },
+        {
+          "rmse": 0.050271980464458466,
+          "max_abs": 0.25,
+          "cosine": 0.9997797012329102,
+          "top1_match": true,
+          "margin": 7.125
+        },
+        {
+          "rmse": 0.03684520721435547,
+          "max_abs": 0.15625,
+          "cosine": 0.9999052286148071,
+          "top1_match": true,
+          "margin": 5.125
+        },
+        {
+          "rmse": 0.033993128687143326,
+          "max_abs": 0.15625,
+          "cosine": 0.9998648166656494,
+          "top1_match": true,
+          "margin": 6.625
+        },
+        {
+          "rmse": 0.03803008049726486,
+          "max_abs": 0.16015625,
+          "cosine": 0.9997837543487549,
+          "top1_match": true,
+          "margin": 8.1875
+        },
+        {
+          "rmse": 0.035592012107372284,
+          "max_abs": 0.15625,
+          "cosine": 0.9998876452445984,
+          "top1_match": true,
+          "margin": 8.1875
+        },
+        {
+          "rmse": 0.029195422306656837,
+          "max_abs": 0.140625,
+          "cosine": 0.9999212026596069,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.029383789747953415,
+          "max_abs": 0.140625,
+          "cosine": 0.9999408721923828,
+          "top1_match": true,
+          "margin": 4.5
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-1",
+      "category": "context",
+      "mode": "official",
+      "prompt_tokens": 1245,
+      "expected": "7320",
+      "text": "The access code of record ZETA-1 is 7320.",
+      "official_text": "The access code of record ZETA-1 is 7320.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        16,
+        374,
+        220,
+        22,
+        18,
+        17,
+        15,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        16,
+        374,
+        220,
+        22,
+        18,
+        17,
+        15,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.02248556911945343,
+          "max_abs": 0.125,
+          "cosine": 0.9999673962593079,
+          "top1_match": true,
+          "margin": 5.6875
+        },
+        {
+          "rmse": 0.04420565068721771,
+          "max_abs": 0.25,
+          "cosine": 0.9999412298202515,
+          "top1_match": true,
+          "margin": 9.5625
+        },
+        {
+          "rmse": 0.04248436167836189,
+          "max_abs": 0.25,
+          "cosine": 0.9999121427536011,
+          "top1_match": true,
+          "margin": 3.0
+        },
+        {
+          "rmse": 0.034308239817619324,
+          "max_abs": 0.1875,
+          "cosine": 0.9999585151672363,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.03040236420929432,
+          "max_abs": 0.140625,
+          "cosine": 0.999933123588562,
+          "top1_match": true,
+          "margin": 7.9375
+        },
+        {
+          "rmse": 0.0369720421731472,
+          "max_abs": 0.1875,
+          "cosine": 0.999951958656311,
+          "top1_match": true,
+          "margin": 4.625
+        },
+        {
+          "rmse": 0.03342596814036369,
+          "max_abs": 0.15625,
+          "cosine": 0.9998564720153809,
+          "top1_match": true,
+          "margin": 8.75
+        },
+        {
+          "rmse": 0.0388898141682148,
+          "max_abs": 0.203125,
+          "cosine": 0.9998355507850647,
+          "top1_match": true,
+          "margin": 8.25
+        },
+        {
+          "rmse": 0.03269145265221596,
+          "max_abs": 0.140625,
+          "cosine": 0.9999080896377563,
+          "top1_match": true,
+          "margin": 5.875
+        },
+        {
+          "rmse": 0.05555478855967522,
+          "max_abs": 0.203125,
+          "cosine": 0.9997965097427368,
+          "top1_match": true,
+          "margin": 4.4375
+        },
+        {
+          "rmse": 0.026706533506512642,
+          "max_abs": 0.125,
+          "cosine": 0.9999222755432129,
+          "top1_match": true,
+          "margin": 6.375
+        },
+        {
+          "rmse": 0.03975510597229004,
+          "max_abs": 0.174560546875,
+          "cosine": 0.9997751712799072,
+          "top1_match": true,
+          "margin": 7.375
+        },
+        {
+          "rmse": 0.038144636899232864,
+          "max_abs": 0.1875,
+          "cosine": 0.9998851418495178,
+          "top1_match": true,
+          "margin": 7.375
+        },
+        {
+          "rmse": 0.04837896674871445,
+          "max_abs": 0.1875,
+          "cosine": 0.999921441078186,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.029280051589012146,
+          "max_abs": 0.1328125,
+          "cosine": 0.9999405145645142,
+          "top1_match": true,
+          "margin": 5.0
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-1",
+      "category": "context",
+      "mode": "lean",
+      "prompt_tokens": 1245,
+      "expected": "7320",
+      "text": "The access code of record ZETA-1 is 7320.",
+      "official_text": "The access code of record ZETA-1 is 7320.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        16,
+        374,
+        220,
+        22,
+        18,
+        17,
+        15,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        16,
+        374,
+        220,
+        22,
+        18,
+        17,
+        15,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.02248556911945343,
+          "max_abs": 0.125,
+          "cosine": 0.9999673962593079,
+          "top1_match": true,
+          "margin": 5.6875
+        },
+        {
+          "rmse": 0.04420565068721771,
+          "max_abs": 0.25,
+          "cosine": 0.9999412298202515,
+          "top1_match": true,
+          "margin": 9.5625
+        },
+        {
+          "rmse": 0.04248436167836189,
+          "max_abs": 0.25,
+          "cosine": 0.9999121427536011,
+          "top1_match": true,
+          "margin": 3.0
+        },
+        {
+          "rmse": 0.034308239817619324,
+          "max_abs": 0.1875,
+          "cosine": 0.9999585151672363,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.03040236420929432,
+          "max_abs": 0.140625,
+          "cosine": 0.999933123588562,
+          "top1_match": true,
+          "margin": 7.9375
+        },
+        {
+          "rmse": 0.0369720421731472,
+          "max_abs": 0.1875,
+          "cosine": 0.999951958656311,
+          "top1_match": true,
+          "margin": 4.625
+        },
+        {
+          "rmse": 0.03342596814036369,
+          "max_abs": 0.15625,
+          "cosine": 0.9998564720153809,
+          "top1_match": true,
+          "margin": 8.75
+        },
+        {
+          "rmse": 0.0388898141682148,
+          "max_abs": 0.203125,
+          "cosine": 0.9998355507850647,
+          "top1_match": true,
+          "margin": 8.25
+        },
+        {
+          "rmse": 0.03269145265221596,
+          "max_abs": 0.140625,
+          "cosine": 0.9999080896377563,
+          "top1_match": true,
+          "margin": 5.875
+        },
+        {
+          "rmse": 0.05555478855967522,
+          "max_abs": 0.203125,
+          "cosine": 0.9997965097427368,
+          "top1_match": true,
+          "margin": 4.4375
+        },
+        {
+          "rmse": 0.026706533506512642,
+          "max_abs": 0.125,
+          "cosine": 0.9999222755432129,
+          "top1_match": true,
+          "margin": 6.375
+        },
+        {
+          "rmse": 0.03975510597229004,
+          "max_abs": 0.174560546875,
+          "cosine": 0.9997751712799072,
+          "top1_match": true,
+          "margin": 7.375
+        },
+        {
+          "rmse": 0.038144636899232864,
+          "max_abs": 0.1875,
+          "cosine": 0.9998851418495178,
+          "top1_match": true,
+          "margin": 7.375
+        },
+        {
+          "rmse": 0.04837896674871445,
+          "max_abs": 0.1875,
+          "cosine": 0.999921441078186,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.029280051589012146,
+          "max_abs": 0.1328125,
+          "cosine": 0.9999405145645142,
+          "top1_match": true,
+          "margin": 5.0
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-1",
+      "category": "context",
+      "mode": "chunk-1024",
+      "prompt_tokens": 1245,
+      "expected": "7320",
+      "text": "The access code of record ZETA-1 is 7320.",
+      "official_text": "The access code of record ZETA-1 is 7320.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        16,
+        374,
+        220,
+        22,
+        18,
+        17,
+        15,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        16,
+        374,
+        220,
+        22,
+        18,
+        17,
+        15,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.037765227258205414,
+          "max_abs": 0.1875,
+          "cosine": 0.9999366402626038,
+          "top1_match": true,
+          "margin": 5.6875
+        },
+        {
+          "rmse": 0.05055079609155655,
+          "max_abs": 0.25,
+          "cosine": 0.9999181628227234,
+          "top1_match": true,
+          "margin": 9.5625
+        },
+        {
+          "rmse": 0.046770744025707245,
+          "max_abs": 0.21875,
+          "cosine": 0.9998824000358582,
+          "top1_match": true,
+          "margin": 3.0
+        },
+        {
+          "rmse": 0.06853519380092621,
+          "max_abs": 0.23828125,
+          "cosine": 0.9998886585235596,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.04567427188158035,
+          "max_abs": 0.265625,
+          "cosine": 0.9998646974563599,
+          "top1_match": true,
+          "margin": 7.9375
+        },
+        {
+          "rmse": 0.06322529166936874,
+          "max_abs": 0.3125,
+          "cosine": 0.9998796582221985,
+          "top1_match": true,
+          "margin": 4.625
+        },
+        {
+          "rmse": 0.0390414297580719,
+          "max_abs": 0.21875,
+          "cosine": 0.9997979998588562,
+          "top1_match": true,
+          "margin": 8.75
+        },
+        {
+          "rmse": 0.04350610822439194,
+          "max_abs": 0.22265625,
+          "cosine": 0.9997984170913696,
+          "top1_match": true,
+          "margin": 8.25
+        },
+        {
+          "rmse": 0.05151176452636719,
+          "max_abs": 0.2265625,
+          "cosine": 0.9997851848602295,
+          "top1_match": true,
+          "margin": 5.875
+        },
+        {
+          "rmse": 0.08760294318199158,
+          "max_abs": 0.296875,
+          "cosine": 0.9995363354682922,
+          "top1_match": true,
+          "margin": 4.4375
+        },
+        {
+          "rmse": 0.04593241214752197,
+          "max_abs": 0.21484375,
+          "cosine": 0.9997512102127075,
+          "top1_match": true,
+          "margin": 6.375
+        },
+        {
+          "rmse": 0.04238395392894745,
+          "max_abs": 0.21875,
+          "cosine": 0.9997438192367554,
+          "top1_match": true,
+          "margin": 7.375
+        },
+        {
+          "rmse": 0.05065735802054405,
+          "max_abs": 0.25,
+          "cosine": 0.9998201727867126,
+          "top1_match": true,
+          "margin": 7.375
+        },
+        {
+          "rmse": 0.08136928826570511,
+          "max_abs": 0.3125,
+          "cosine": 0.9997578263282776,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.08464744687080383,
+          "max_abs": 0.34375,
+          "cosine": 0.9996157884597778,
+          "top1_match": true,
+          "margin": 5.0
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-2",
+      "category": "context",
+      "mode": "official",
+      "prompt_tokens": 1545,
+      "expected": "7321",
+      "text": "The access code of record ZETA-2 is 7321.",
+      "official_text": "The access code of record ZETA-2 is 7321.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        17,
+        374,
+        220,
+        22,
+        18,
+        17,
+        16,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        17,
+        374,
+        220,
+        22,
+        18,
+        17,
+        16,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.06516972184181213,
+          "max_abs": 0.185546875,
+          "cosine": 0.9998367428779602,
+          "top1_match": true,
+          "margin": 5.0625
+        },
+        {
+          "rmse": 0.035516511648893356,
+          "max_abs": 0.1875,
+          "cosine": 0.9999452829360962,
+          "top1_match": true,
+          "margin": 9.6875
+        },
+        {
+          "rmse": 0.030837947502732277,
+          "max_abs": 0.140625,
+          "cosine": 0.9999370574951172,
+          "top1_match": true,
+          "margin": 2.875
+        },
+        {
+          "rmse": 0.03396767005324364,
+          "max_abs": 0.1875,
+          "cosine": 0.9999557733535767,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.03205979987978935,
+          "max_abs": 0.15625,
+          "cosine": 0.9999361634254456,
+          "top1_match": true,
+          "margin": 6.875
+        },
+        {
+          "rmse": 0.05910005420446396,
+          "max_abs": 0.25,
+          "cosine": 0.9999390244483948,
+          "top1_match": true,
+          "margin": 4.25
+        },
+        {
+          "rmse": 0.03570945933461189,
+          "max_abs": 0.171875,
+          "cosine": 0.9998288154602051,
+          "top1_match": true,
+          "margin": 8.5625
+        },
+        {
+          "rmse": 0.05649185925722122,
+          "max_abs": 0.203125,
+          "cosine": 0.9997100234031677,
+          "top1_match": true,
+          "margin": 7.75
+        },
+        {
+          "rmse": 0.030938826501369476,
+          "max_abs": 0.14453125,
+          "cosine": 0.9999150037765503,
+          "top1_match": true,
+          "margin": 6.3125
+        },
+        {
+          "rmse": 0.05121777206659317,
+          "max_abs": 0.1875,
+          "cosine": 0.9998253583908081,
+          "top1_match": true,
+          "margin": 5.25
+        },
+        {
+          "rmse": 0.034735485911369324,
+          "max_abs": 0.171875,
+          "cosine": 0.9998691082000732,
+          "top1_match": true,
+          "margin": 7.0
+        },
+        {
+          "rmse": 0.07511574029922485,
+          "max_abs": 0.34375,
+          "cosine": 0.9992406964302063,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.05034872144460678,
+          "max_abs": 0.25,
+          "cosine": 0.9998747110366821,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.04297558590769768,
+          "max_abs": 0.171875,
+          "cosine": 0.9999130964279175,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.05950744450092316,
+          "max_abs": 0.21875,
+          "cosine": 0.9998125433921814,
+          "top1_match": true,
+          "margin": 5.125
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-2",
+      "category": "context",
+      "mode": "lean",
+      "prompt_tokens": 1545,
+      "expected": "7321",
+      "text": "The access code of record ZETA-2 is 7321.",
+      "official_text": "The access code of record ZETA-2 is 7321.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        17,
+        374,
+        220,
+        22,
+        18,
+        17,
+        16,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        17,
+        374,
+        220,
+        22,
+        18,
+        17,
+        16,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.06516972184181213,
+          "max_abs": 0.185546875,
+          "cosine": 0.9998367428779602,
+          "top1_match": true,
+          "margin": 5.0625
+        },
+        {
+          "rmse": 0.035516511648893356,
+          "max_abs": 0.1875,
+          "cosine": 0.9999452829360962,
+          "top1_match": true,
+          "margin": 9.6875
+        },
+        {
+          "rmse": 0.030837947502732277,
+          "max_abs": 0.140625,
+          "cosine": 0.9999370574951172,
+          "top1_match": true,
+          "margin": 2.875
+        },
+        {
+          "rmse": 0.03396767005324364,
+          "max_abs": 0.1875,
+          "cosine": 0.9999557733535767,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.03205979987978935,
+          "max_abs": 0.15625,
+          "cosine": 0.9999361634254456,
+          "top1_match": true,
+          "margin": 6.875
+        },
+        {
+          "rmse": 0.05910005420446396,
+          "max_abs": 0.25,
+          "cosine": 0.9999390244483948,
+          "top1_match": true,
+          "margin": 4.25
+        },
+        {
+          "rmse": 0.03570945933461189,
+          "max_abs": 0.171875,
+          "cosine": 0.9998288154602051,
+          "top1_match": true,
+          "margin": 8.5625
+        },
+        {
+          "rmse": 0.05649185925722122,
+          "max_abs": 0.203125,
+          "cosine": 0.9997100234031677,
+          "top1_match": true,
+          "margin": 7.75
+        },
+        {
+          "rmse": 0.030938826501369476,
+          "max_abs": 0.14453125,
+          "cosine": 0.9999150037765503,
+          "top1_match": true,
+          "margin": 6.3125
+        },
+        {
+          "rmse": 0.05121777206659317,
+          "max_abs": 0.1875,
+          "cosine": 0.9998253583908081,
+          "top1_match": true,
+          "margin": 5.25
+        },
+        {
+          "rmse": 0.034735485911369324,
+          "max_abs": 0.171875,
+          "cosine": 0.9998691082000732,
+          "top1_match": true,
+          "margin": 7.0
+        },
+        {
+          "rmse": 0.07511574029922485,
+          "max_abs": 0.34375,
+          "cosine": 0.9992406964302063,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.05034872144460678,
+          "max_abs": 0.25,
+          "cosine": 0.9998747110366821,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.04297558590769768,
+          "max_abs": 0.171875,
+          "cosine": 0.9999130964279175,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.05950744450092316,
+          "max_abs": 0.21875,
+          "cosine": 0.9998125433921814,
+          "top1_match": true,
+          "margin": 5.125
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-2",
+      "category": "context",
+      "mode": "chunk-1024",
+      "prompt_tokens": 1545,
+      "expected": "7321",
+      "text": "The access code of record ZETA-2 is 7321.",
+      "official_text": "The access code of record ZETA-2 is 7321.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        17,
+        374,
+        220,
+        22,
+        18,
+        17,
+        16,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        17,
+        374,
+        220,
+        22,
+        18,
+        17,
+        16,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.055580057203769684,
+          "max_abs": 0.234375,
+          "cosine": 0.9998842477798462,
+          "top1_match": true,
+          "margin": 5.0625
+        },
+        {
+          "rmse": 0.05683232098817825,
+          "max_abs": 0.25,
+          "cosine": 0.9998939633369446,
+          "top1_match": true,
+          "margin": 9.6875
+        },
+        {
+          "rmse": 0.04556664824485779,
+          "max_abs": 0.21875,
+          "cosine": 0.999869167804718,
+          "top1_match": true,
+          "margin": 2.875
+        },
+        {
+          "rmse": 0.044889185577631,
+          "max_abs": 0.21875,
+          "cosine": 0.9999194741249084,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.047624941915273666,
+          "max_abs": 0.203125,
+          "cosine": 0.9998438358306885,
+          "top1_match": true,
+          "margin": 6.875
+        },
+        {
+          "rmse": 0.06987081468105316,
+          "max_abs": 0.3125,
+          "cosine": 0.9999003410339355,
+          "top1_match": true,
+          "margin": 4.25
+        },
+        {
+          "rmse": 0.048726681619882584,
+          "max_abs": 0.21875,
+          "cosine": 0.9997239112854004,
+          "top1_match": true,
+          "margin": 8.5625
+        },
+        {
+          "rmse": 0.06892067939043045,
+          "max_abs": 0.296875,
+          "cosine": 0.9995572566986084,
+          "top1_match": true,
+          "margin": 7.75
+        },
+        {
+          "rmse": 0.05171259492635727,
+          "max_abs": 0.234375,
+          "cosine": 0.9997864961624146,
+          "top1_match": true,
+          "margin": 6.3125
+        },
+        {
+          "rmse": 0.060406241565942764,
+          "max_abs": 0.25,
+          "cosine": 0.9997817277908325,
+          "top1_match": true,
+          "margin": 5.25
+        },
+        {
+          "rmse": 0.060381930321455,
+          "max_abs": 0.2734375,
+          "cosine": 0.9995869398117065,
+          "top1_match": true,
+          "margin": 7.0
+        },
+        {
+          "rmse": 0.08238902688026428,
+          "max_abs": 0.5,
+          "cosine": 0.9991074800491333,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.05278443172574043,
+          "max_abs": 0.3388671875,
+          "cosine": 0.9998021125793457,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.05181758478283882,
+          "max_abs": 0.25,
+          "cosine": 0.9998452663421631,
+          "top1_match": true,
+          "margin": 7.625
+        },
+        {
+          "rmse": 0.07441695779561996,
+          "max_abs": 0.375,
+          "cosine": 0.9997031688690186,
+          "top1_match": true,
+          "margin": 5.125
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-3",
+      "category": "context",
+      "mode": "official",
+      "prompt_tokens": 1845,
+      "expected": "7322",
+      "text": "The access code of record ZETA-3 is 7322.",
+      "official_text": "The access code of record ZETA-3 is 7322.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        18,
+        374,
+        220,
+        22,
+        18,
+        17,
+        17,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        18,
+        374,
+        220,
+        22,
+        18,
+        17,
+        17,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.026760820299386978,
+          "max_abs": 0.125,
+          "cosine": 0.9999626874923706,
+          "top1_match": true,
+          "margin": 5.25
+        },
+        {
+          "rmse": 0.041435301303863525,
+          "max_abs": 0.1875,
+          "cosine": 0.9999487996101379,
+          "top1_match": true,
+          "margin": 9.25
+        },
+        {
+          "rmse": 0.03544601425528526,
+          "max_abs": 0.1640625,
+          "cosine": 0.9999167919158936,
+          "top1_match": true,
+          "margin": 3.125
+        },
+        {
+          "rmse": 0.03739238530397415,
+          "max_abs": 0.1875,
+          "cosine": 0.9999326467514038,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.033584870398044586,
+          "max_abs": 0.15625,
+          "cosine": 0.999919593334198,
+          "top1_match": true,
+          "margin": 6.6875
+        },
+        {
+          "rmse": 0.0410369411110878,
+          "max_abs": 0.1875,
+          "cosine": 0.9999400973320007,
+          "top1_match": true,
+          "margin": 4.375
+        },
+        {
+          "rmse": 0.06418462097644806,
+          "max_abs": 0.234375,
+          "cosine": 0.9995391368865967,
+          "top1_match": true,
+          "margin": 8.75
+        },
+        {
+          "rmse": 0.05277060717344284,
+          "max_abs": 0.21875,
+          "cosine": 0.9997726082801819,
+          "top1_match": true,
+          "margin": 8.0
+        },
+        {
+          "rmse": 0.03047608584165573,
+          "max_abs": 0.15625,
+          "cosine": 0.999919593334198,
+          "top1_match": true,
+          "margin": 5.9375
+        },
+        {
+          "rmse": 0.027275623753666878,
+          "max_abs": 0.171875,
+          "cosine": 0.999945878982544,
+          "top1_match": true,
+          "margin": 5.375
+        },
+        {
+          "rmse": 0.02636650949716568,
+          "max_abs": 0.125,
+          "cosine": 0.9999005198478699,
+          "top1_match": true,
+          "margin": 6.125
+        },
+        {
+          "rmse": 0.04334591329097748,
+          "max_abs": 0.171875,
+          "cosine": 0.9997236728668213,
+          "top1_match": true,
+          "margin": 6.625
+        },
+        {
+          "rmse": 0.060347866266965866,
+          "max_abs": 0.21875,
+          "cosine": 0.9998224973678589,
+          "top1_match": true,
+          "margin": 6.25
+        },
+        {
+          "rmse": 0.07509719580411911,
+          "max_abs": 0.203125,
+          "cosine": 0.9997291564941406,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.03979596123099327,
+          "max_abs": 0.1875,
+          "cosine": 0.9998979568481445,
+          "top1_match": true,
+          "margin": 5.0
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-3",
+      "category": "context",
+      "mode": "lean",
+      "prompt_tokens": 1845,
+      "expected": "7322",
+      "text": "The access code of record ZETA-3 is 7322.",
+      "official_text": "The access code of record ZETA-3 is 7322.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        18,
+        374,
+        220,
+        22,
+        18,
+        17,
+        17,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        18,
+        374,
+        220,
+        22,
+        18,
+        17,
+        17,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.026760820299386978,
+          "max_abs": 0.125,
+          "cosine": 0.9999626874923706,
+          "top1_match": true,
+          "margin": 5.25
+        },
+        {
+          "rmse": 0.041435301303863525,
+          "max_abs": 0.1875,
+          "cosine": 0.9999487996101379,
+          "top1_match": true,
+          "margin": 9.25
+        },
+        {
+          "rmse": 0.03544601425528526,
+          "max_abs": 0.1640625,
+          "cosine": 0.9999167919158936,
+          "top1_match": true,
+          "margin": 3.125
+        },
+        {
+          "rmse": 0.03739238530397415,
+          "max_abs": 0.1875,
+          "cosine": 0.9999326467514038,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.033584870398044586,
+          "max_abs": 0.15625,
+          "cosine": 0.999919593334198,
+          "top1_match": true,
+          "margin": 6.6875
+        },
+        {
+          "rmse": 0.0410369411110878,
+          "max_abs": 0.1875,
+          "cosine": 0.9999400973320007,
+          "top1_match": true,
+          "margin": 4.375
+        },
+        {
+          "rmse": 0.06418462097644806,
+          "max_abs": 0.234375,
+          "cosine": 0.9995391368865967,
+          "top1_match": true,
+          "margin": 8.75
+        },
+        {
+          "rmse": 0.05277060717344284,
+          "max_abs": 0.21875,
+          "cosine": 0.9997726082801819,
+          "top1_match": true,
+          "margin": 8.0
+        },
+        {
+          "rmse": 0.03047608584165573,
+          "max_abs": 0.15625,
+          "cosine": 0.999919593334198,
+          "top1_match": true,
+          "margin": 5.9375
+        },
+        {
+          "rmse": 0.027275623753666878,
+          "max_abs": 0.171875,
+          "cosine": 0.999945878982544,
+          "top1_match": true,
+          "margin": 5.375
+        },
+        {
+          "rmse": 0.02636650949716568,
+          "max_abs": 0.125,
+          "cosine": 0.9999005198478699,
+          "top1_match": true,
+          "margin": 6.125
+        },
+        {
+          "rmse": 0.04334591329097748,
+          "max_abs": 0.171875,
+          "cosine": 0.9997236728668213,
+          "top1_match": true,
+          "margin": 6.625
+        },
+        {
+          "rmse": 0.060347866266965866,
+          "max_abs": 0.21875,
+          "cosine": 0.9998224973678589,
+          "top1_match": true,
+          "margin": 6.25
+        },
+        {
+          "rmse": 0.07509719580411911,
+          "max_abs": 0.203125,
+          "cosine": 0.9997291564941406,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.03979596123099327,
+          "max_abs": 0.1875,
+          "cosine": 0.9998979568481445,
+          "top1_match": true,
+          "margin": 5.0
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-3",
+      "category": "context",
+      "mode": "chunk-1024",
+      "prompt_tokens": 1845,
+      "expected": "7322",
+      "text": "The access code of record ZETA-3 is 7322.",
+      "official_text": "The access code of record ZETA-3 is 7322.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        18,
+        374,
+        220,
+        22,
+        18,
+        17,
+        17,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        18,
+        374,
+        220,
+        22,
+        18,
+        17,
+        17,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.04545125365257263,
+          "max_abs": 0.21875,
+          "cosine": 0.9999300241470337,
+          "top1_match": true,
+          "margin": 5.25
+        },
+        {
+          "rmse": 0.05446622520685196,
+          "max_abs": 0.25,
+          "cosine": 0.9999356269836426,
+          "top1_match": true,
+          "margin": 9.25
+        },
+        {
+          "rmse": 0.03819376975297928,
+          "max_abs": 0.1875,
+          "cosine": 0.9999046921730042,
+          "top1_match": true,
+          "margin": 3.125
+        },
+        {
+          "rmse": 0.04587380960583687,
+          "max_abs": 0.25,
+          "cosine": 0.9999200701713562,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.04453352466225624,
+          "max_abs": 0.203125,
+          "cosine": 0.9998764991760254,
+          "top1_match": true,
+          "margin": 6.6875
+        },
+        {
+          "rmse": 0.06176476180553436,
+          "max_abs": 0.34375,
+          "cosine": 0.9998862147331238,
+          "top1_match": true,
+          "margin": 4.375
+        },
+        {
+          "rmse": 0.04869748279452324,
+          "max_abs": 0.25,
+          "cosine": 0.9997064471244812,
+          "top1_match": true,
+          "margin": 8.75
+        },
+        {
+          "rmse": 0.04754947870969772,
+          "max_abs": 0.234375,
+          "cosine": 0.9998050928115845,
+          "top1_match": true,
+          "margin": 8.0
+        },
+        {
+          "rmse": 0.04437772557139397,
+          "max_abs": 0.21875,
+          "cosine": 0.999815821647644,
+          "top1_match": true,
+          "margin": 5.9375
+        },
+        {
+          "rmse": 0.03769683837890625,
+          "max_abs": 0.1875,
+          "cosine": 0.9998984336853027,
+          "top1_match": true,
+          "margin": 5.375
+        },
+        {
+          "rmse": 0.03423105925321579,
+          "max_abs": 0.171875,
+          "cosine": 0.9998399019241333,
+          "top1_match": true,
+          "margin": 6.125
+        },
+        {
+          "rmse": 0.04106178134679794,
+          "max_abs": 0.203125,
+          "cosine": 0.9997497200965881,
+          "top1_match": true,
+          "margin": 6.625
+        },
+        {
+          "rmse": 0.04656641557812691,
+          "max_abs": 0.21875,
+          "cosine": 0.9998295307159424,
+          "top1_match": true,
+          "margin": 6.25
+        },
+        {
+          "rmse": 0.08508486300706863,
+          "max_abs": 0.275390625,
+          "cosine": 0.9996775984764099,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.06525377929210663,
+          "max_abs": 0.28125,
+          "cosine": 0.9997777342796326,
+          "top1_match": true,
+          "margin": 5.0
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-4",
+      "category": "context",
+      "mode": "official",
+      "prompt_tokens": 2145,
+      "expected": "7323",
+      "text": "The access code of record ZETA-4 is 7323.",
+      "official_text": "The access code of record ZETA-4 is 7323.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        19,
+        374,
+        220,
+        22,
+        18,
+        17,
+        18,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        19,
+        374,
+        220,
+        22,
+        18,
+        17,
+        18,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.02220476046204567,
+          "max_abs": 0.1015625,
+          "cosine": 0.9999741315841675,
+          "top1_match": true,
+          "margin": 5.4375
+        },
+        {
+          "rmse": 0.06089881435036659,
+          "max_abs": 0.21875,
+          "cosine": 0.9998965263366699,
+          "top1_match": true,
+          "margin": 9.6875
+        },
+        {
+          "rmse": 0.05404094606637955,
+          "max_abs": 0.171875,
+          "cosine": 0.9998505115509033,
+          "top1_match": true,
+          "margin": 2.875
+        },
+        {
+          "rmse": 0.04585742577910423,
+          "max_abs": 0.1875,
+          "cosine": 0.9999204874038696,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.06011562421917915,
+          "max_abs": 0.24127197265625,
+          "cosine": 0.9997622966766357,
+          "top1_match": true,
+          "margin": 6.125
+        },
+        {
+          "rmse": 0.04066196084022522,
+          "max_abs": 0.1875,
+          "cosine": 0.9999421238899231,
+          "top1_match": true,
+          "margin": 4.375
+        },
+        {
+          "rmse": 0.06045655906200409,
+          "max_abs": 0.21435546875,
+          "cosine": 0.9995518922805786,
+          "top1_match": true,
+          "margin": 8.5625
+        },
+        {
+          "rmse": 0.048151645809412,
+          "max_abs": 0.1875,
+          "cosine": 0.999791145324707,
+          "top1_match": true,
+          "margin": 8.0
+        },
+        {
+          "rmse": 0.03127915412187576,
+          "max_abs": 0.1484375,
+          "cosine": 0.9999117255210876,
+          "top1_match": true,
+          "margin": 6.75
+        },
+        {
+          "rmse": 0.031025433912873268,
+          "max_abs": 0.140625,
+          "cosine": 0.9999412894248962,
+          "top1_match": true,
+          "margin": 5.0625
+        },
+        {
+          "rmse": 0.03639378771185875,
+          "max_abs": 0.15625,
+          "cosine": 0.9998464584350586,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.05247550085186958,
+          "max_abs": 0.234375,
+          "cosine": 0.9996508359909058,
+          "top1_match": true,
+          "margin": 8.125
+        },
+        {
+          "rmse": 0.03302042558789253,
+          "max_abs": 0.15625,
+          "cosine": 0.9998592138290405,
+          "top1_match": true,
+          "margin": 7.75
+        },
+        {
+          "rmse": 0.04377682879567146,
+          "max_abs": 0.1875,
+          "cosine": 0.9998799562454224,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.04306676611304283,
+          "max_abs": 0.203125,
+          "cosine": 0.9999042749404907,
+          "top1_match": true,
+          "margin": 4.0
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-4",
+      "category": "context",
+      "mode": "lean",
+      "prompt_tokens": 2145,
+      "expected": "7323",
+      "text": "The access code of record ZETA-4 is 7323.",
+      "official_text": "The access code of record ZETA-4 is 7323.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        19,
+        374,
+        220,
+        22,
+        18,
+        17,
+        18,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        19,
+        374,
+        220,
+        22,
+        18,
+        17,
+        18,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.02220476046204567,
+          "max_abs": 0.1015625,
+          "cosine": 0.9999741315841675,
+          "top1_match": true,
+          "margin": 5.4375
+        },
+        {
+          "rmse": 0.06089881435036659,
+          "max_abs": 0.21875,
+          "cosine": 0.9998965263366699,
+          "top1_match": true,
+          "margin": 9.6875
+        },
+        {
+          "rmse": 0.05404094606637955,
+          "max_abs": 0.171875,
+          "cosine": 0.9998505115509033,
+          "top1_match": true,
+          "margin": 2.875
+        },
+        {
+          "rmse": 0.04585742577910423,
+          "max_abs": 0.1875,
+          "cosine": 0.9999204874038696,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.06011562421917915,
+          "max_abs": 0.24127197265625,
+          "cosine": 0.9997622966766357,
+          "top1_match": true,
+          "margin": 6.125
+        },
+        {
+          "rmse": 0.04066196084022522,
+          "max_abs": 0.1875,
+          "cosine": 0.9999421238899231,
+          "top1_match": true,
+          "margin": 4.375
+        },
+        {
+          "rmse": 0.06045655906200409,
+          "max_abs": 0.21435546875,
+          "cosine": 0.9995518922805786,
+          "top1_match": true,
+          "margin": 8.5625
+        },
+        {
+          "rmse": 0.048151645809412,
+          "max_abs": 0.1875,
+          "cosine": 0.999791145324707,
+          "top1_match": true,
+          "margin": 8.0
+        },
+        {
+          "rmse": 0.03127915412187576,
+          "max_abs": 0.1484375,
+          "cosine": 0.9999117255210876,
+          "top1_match": true,
+          "margin": 6.75
+        },
+        {
+          "rmse": 0.031025433912873268,
+          "max_abs": 0.140625,
+          "cosine": 0.9999412894248962,
+          "top1_match": true,
+          "margin": 5.0625
+        },
+        {
+          "rmse": 0.03639378771185875,
+          "max_abs": 0.15625,
+          "cosine": 0.9998464584350586,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.05247550085186958,
+          "max_abs": 0.234375,
+          "cosine": 0.9996508359909058,
+          "top1_match": true,
+          "margin": 8.125
+        },
+        {
+          "rmse": 0.03302042558789253,
+          "max_abs": 0.15625,
+          "cosine": 0.9998592138290405,
+          "top1_match": true,
+          "margin": 7.75
+        },
+        {
+          "rmse": 0.04377682879567146,
+          "max_abs": 0.1875,
+          "cosine": 0.9998799562454224,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.04306676611304283,
+          "max_abs": 0.203125,
+          "cosine": 0.9999042749404907,
+          "top1_match": true,
+          "margin": 4.0
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-4",
+      "category": "context",
+      "mode": "chunk-1024",
+      "prompt_tokens": 2145,
+      "expected": "7323",
+      "text": "The access code of record ZETA-4 is 7323.",
+      "official_text": "The access code of record ZETA-4 is 7323.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        19,
+        374,
+        220,
+        22,
+        18,
+        17,
+        18,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        19,
+        374,
+        220,
+        22,
+        18,
+        17,
+        18,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.04249756410717964,
+          "max_abs": 0.2109375,
+          "cosine": 0.9999215602874756,
+          "top1_match": true,
+          "margin": 5.4375
+        },
+        {
+          "rmse": 0.06497078388929367,
+          "max_abs": 0.2890625,
+          "cosine": 0.999893307685852,
+          "top1_match": true,
+          "margin": 9.6875
+        },
+        {
+          "rmse": 0.07040343433618546,
+          "max_abs": 0.26171875,
+          "cosine": 0.9997470378875732,
+          "top1_match": true,
+          "margin": 2.875
+        },
+        {
+          "rmse": 0.05883032828569412,
+          "max_abs": 0.265625,
+          "cosine": 0.9999082088470459,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.0444147028028965,
+          "max_abs": 0.1875,
+          "cosine": 0.9998717904090881,
+          "top1_match": true,
+          "margin": 6.125
+        },
+        {
+          "rmse": 0.053123459219932556,
+          "max_abs": 0.25,
+          "cosine": 0.9999053478240967,
+          "top1_match": true,
+          "margin": 4.375
+        },
+        {
+          "rmse": 0.05465880036354065,
+          "max_abs": 0.28125,
+          "cosine": 0.999661386013031,
+          "top1_match": true,
+          "margin": 8.5625
+        },
+        {
+          "rmse": 0.04203625023365021,
+          "max_abs": 0.21875,
+          "cosine": 0.9998278617858887,
+          "top1_match": true,
+          "margin": 8.0
+        },
+        {
+          "rmse": 0.07158389687538147,
+          "max_abs": 0.2734375,
+          "cosine": 0.9995486736297607,
+          "top1_match": true,
+          "margin": 6.75
+        },
+        {
+          "rmse": 0.07032616436481476,
+          "max_abs": 0.25,
+          "cosine": 0.9996615648269653,
+          "top1_match": true,
+          "margin": 5.0625
+        },
+        {
+          "rmse": 0.03842329978942871,
+          "max_abs": 0.21875,
+          "cosine": 0.9998284578323364,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.06726791709661484,
+          "max_abs": 0.375,
+          "cosine": 0.9994118213653564,
+          "top1_match": true,
+          "margin": 8.125
+        },
+        {
+          "rmse": 0.07008490711450577,
+          "max_abs": 0.3203125,
+          "cosine": 0.9994558095932007,
+          "top1_match": true,
+          "margin": 7.75
+        },
+        {
+          "rmse": 0.08560531586408615,
+          "max_abs": 0.3046875,
+          "cosine": 0.9995964169502258,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.08011975139379501,
+          "max_abs": 0.328125,
+          "cosine": 0.9997077584266663,
+          "top1_match": true,
+          "margin": 4.0
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-5",
+      "category": "context",
+      "mode": "official",
+      "prompt_tokens": 2445,
+      "expected": "7324",
+      "text": "The access code of record ZETA-5 is 7324.",
+      "official_text": "The access code of record ZETA-5 is 7324.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        20,
+        374,
+        220,
+        22,
+        18,
+        17,
+        19,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        20,
+        374,
+        220,
+        22,
+        18,
+        17,
+        19,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.046184346079826355,
+          "max_abs": 0.15625,
+          "cosine": 0.9999133944511414,
+          "top1_match": true,
+          "margin": 5.25
+        },
+        {
+          "rmse": 0.036162830889225006,
+          "max_abs": 0.15625,
+          "cosine": 0.9999492168426514,
+          "top1_match": true,
+          "margin": 9.5
+        },
+        {
+          "rmse": 0.05980782210826874,
+          "max_abs": 0.21875,
+          "cosine": 0.9998365640640259,
+          "top1_match": true,
+          "margin": 3.125
+        },
+        {
+          "rmse": 0.04525410756468773,
+          "max_abs": 0.25,
+          "cosine": 0.999932050704956,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.04118988662958145,
+          "max_abs": 0.1875,
+          "cosine": 0.9999023079872131,
+          "top1_match": true,
+          "margin": 7.0
+        },
+        {
+          "rmse": 0.03878160938620567,
+          "max_abs": 0.1875,
+          "cosine": 0.9999478459358215,
+          "top1_match": true,
+          "margin": 4.625
+        },
+        {
+          "rmse": 0.04107880964875221,
+          "max_abs": 0.1796875,
+          "cosine": 0.9997997283935547,
+          "top1_match": true,
+          "margin": 8.9375
+        },
+        {
+          "rmse": 0.03879585117101669,
+          "max_abs": 0.1875,
+          "cosine": 0.9998811483383179,
+          "top1_match": true,
+          "margin": 8.125
+        },
+        {
+          "rmse": 0.028562143445014954,
+          "max_abs": 0.140625,
+          "cosine": 0.9999253153800964,
+          "top1_match": true,
+          "margin": 7.0
+        },
+        {
+          "rmse": 0.03437971696257591,
+          "max_abs": 0.15625,
+          "cosine": 0.9999178051948547,
+          "top1_match": true,
+          "margin": 5.625
+        },
+        {
+          "rmse": 0.03907490521669388,
+          "max_abs": 0.1640625,
+          "cosine": 0.9998299479484558,
+          "top1_match": true,
+          "margin": 7.75
+        },
+        {
+          "rmse": 0.03349677473306656,
+          "max_abs": 0.14453125,
+          "cosine": 0.9998583197593689,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.0725225955247879,
+          "max_abs": 0.375,
+          "cosine": 0.9992454648017883,
+          "top1_match": true,
+          "margin": 8.125
+        },
+        {
+          "rmse": 0.04118678718805313,
+          "max_abs": 0.1875,
+          "cosine": 0.999863862991333,
+          "top1_match": true,
+          "margin": 8.75
+        },
+        {
+          "rmse": 0.03599468618631363,
+          "max_abs": 0.171875,
+          "cosine": 0.9999006390571594,
+          "top1_match": true,
+          "margin": 6.25
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-5",
+      "category": "context",
+      "mode": "lean",
+      "prompt_tokens": 2445,
+      "expected": "7324",
+      "text": "The access code of record ZETA-5 is 7324.",
+      "official_text": "The access code of record ZETA-5 is 7324.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        20,
+        374,
+        220,
+        22,
+        18,
+        17,
+        19,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        20,
+        374,
+        220,
+        22,
+        18,
+        17,
+        19,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.046184346079826355,
+          "max_abs": 0.15625,
+          "cosine": 0.9999133944511414,
+          "top1_match": true,
+          "margin": 5.25
+        },
+        {
+          "rmse": 0.036162830889225006,
+          "max_abs": 0.15625,
+          "cosine": 0.9999492168426514,
+          "top1_match": true,
+          "margin": 9.5
+        },
+        {
+          "rmse": 0.05980782210826874,
+          "max_abs": 0.21875,
+          "cosine": 0.9998365640640259,
+          "top1_match": true,
+          "margin": 3.125
+        },
+        {
+          "rmse": 0.04525410756468773,
+          "max_abs": 0.25,
+          "cosine": 0.999932050704956,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.04118988662958145,
+          "max_abs": 0.1875,
+          "cosine": 0.9999023079872131,
+          "top1_match": true,
+          "margin": 7.0
+        },
+        {
+          "rmse": 0.03878160938620567,
+          "max_abs": 0.1875,
+          "cosine": 0.9999478459358215,
+          "top1_match": true,
+          "margin": 4.625
+        },
+        {
+          "rmse": 0.04107880964875221,
+          "max_abs": 0.1796875,
+          "cosine": 0.9997997283935547,
+          "top1_match": true,
+          "margin": 8.9375
+        },
+        {
+          "rmse": 0.03879585117101669,
+          "max_abs": 0.1875,
+          "cosine": 0.9998811483383179,
+          "top1_match": true,
+          "margin": 8.125
+        },
+        {
+          "rmse": 0.028562143445014954,
+          "max_abs": 0.140625,
+          "cosine": 0.9999253153800964,
+          "top1_match": true,
+          "margin": 7.0
+        },
+        {
+          "rmse": 0.03437971696257591,
+          "max_abs": 0.15625,
+          "cosine": 0.9999178051948547,
+          "top1_match": true,
+          "margin": 5.625
+        },
+        {
+          "rmse": 0.03907490521669388,
+          "max_abs": 0.1640625,
+          "cosine": 0.9998299479484558,
+          "top1_match": true,
+          "margin": 7.75
+        },
+        {
+          "rmse": 0.03349677473306656,
+          "max_abs": 0.14453125,
+          "cosine": 0.9998583197593689,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.0725225955247879,
+          "max_abs": 0.375,
+          "cosine": 0.9992454648017883,
+          "top1_match": true,
+          "margin": 8.125
+        },
+        {
+          "rmse": 0.04118678718805313,
+          "max_abs": 0.1875,
+          "cosine": 0.999863862991333,
+          "top1_match": true,
+          "margin": 8.75
+        },
+        {
+          "rmse": 0.03599468618631363,
+          "max_abs": 0.171875,
+          "cosine": 0.9999006390571594,
+          "top1_match": true,
+          "margin": 6.25
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    },
+    {
+      "id": "context-5",
+      "category": "context",
+      "mode": "chunk-1024",
+      "prompt_tokens": 2445,
+      "expected": "7324",
+      "text": "The access code of record ZETA-5 is 7324.",
+      "official_text": "The access code of record ZETA-5 is 7324.",
+      "correct": false,
+      "official_correct": false,
+      "tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        20,
+        374,
+        220,
+        22,
+        18,
+        17,
+        19,
+        13
+      ],
+      "official_tokens": [
+        785,
+        2615,
+        2038,
+        315,
+        3255,
+        1863,
+        20695,
+        12,
+        20,
+        374,
+        220,
+        22,
+        18,
+        17,
+        19,
+        13
+      ],
+      "exact_tokens": true,
+      "truncated": false,
+      "official_truncated": false,
+      "steps": [
+        {
+          "rmse": 0.041105251759290695,
+          "max_abs": 0.171875,
+          "cosine": 0.9999151229858398,
+          "top1_match": true,
+          "margin": 5.25
+        },
+        {
+          "rmse": 0.05645408853888512,
+          "max_abs": 0.255859375,
+          "cosine": 0.9999071359634399,
+          "top1_match": true,
+          "margin": 9.5
+        },
+        {
+          "rmse": 0.04897571727633476,
+          "max_abs": 0.220703125,
+          "cosine": 0.999866247177124,
+          "top1_match": true,
+          "margin": 3.125
+        },
+        {
+          "rmse": 0.04414195939898491,
+          "max_abs": 0.25,
+          "cosine": 0.9999184608459473,
+          "top1_match": true,
+          "margin": 7.25
+        },
+        {
+          "rmse": 0.04142637550830841,
+          "max_abs": 0.203125,
+          "cosine": 0.999882161617279,
+          "top1_match": true,
+          "margin": 7.0
+        },
+        {
+          "rmse": 0.052564676851034164,
+          "max_abs": 0.3125,
+          "cosine": 0.9999071359634399,
+          "top1_match": true,
+          "margin": 4.625
+        },
+        {
+          "rmse": 0.04102318361401558,
+          "max_abs": 0.22021484375,
+          "cosine": 0.9997971653938293,
+          "top1_match": true,
+          "margin": 8.9375
+        },
+        {
+          "rmse": 0.07654067873954773,
+          "max_abs": 0.3125,
+          "cosine": 0.9994913935661316,
+          "top1_match": true,
+          "margin": 8.125
+        },
+        {
+          "rmse": 0.054255858063697815,
+          "max_abs": 0.25390625,
+          "cosine": 0.9997266530990601,
+          "top1_match": true,
+          "margin": 7.0
+        },
+        {
+          "rmse": 0.0787920281291008,
+          "max_abs": 0.28125,
+          "cosine": 0.9995551109313965,
+          "top1_match": true,
+          "margin": 5.625
+        },
+        {
+          "rmse": 0.05085247755050659,
+          "max_abs": 0.27734375,
+          "cosine": 0.9997179508209229,
+          "top1_match": true,
+          "margin": 7.75
+        },
+        {
+          "rmse": 0.06530162692070007,
+          "max_abs": 0.28125,
+          "cosine": 0.9994994401931763,
+          "top1_match": true,
+          "margin": 7.5
+        },
+        {
+          "rmse": 0.052621252834796906,
+          "max_abs": 0.265625,
+          "cosine": 0.9995816946029663,
+          "top1_match": true,
+          "margin": 8.125
+        },
+        {
+          "rmse": 0.07838769257068634,
+          "max_abs": 0.375,
+          "cosine": 0.9995602965354919,
+          "top1_match": true,
+          "margin": 8.75
+        },
+        {
+          "rmse": 0.12252652645111084,
+          "max_abs": 0.4375,
+          "cosine": 0.9991551637649536,
+          "top1_match": true,
+          "margin": 6.25
+        }
+      ],
+      "cache_exact": true,
+      "all_blocks_reclaimed": true
+    }
+  ],
+  "metadata": {
+    "python": "3.12.3",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "vram_bytes": 25250627584,
+    "cuda": "12.8",
+    "versions": {
+      "torch": "2.8.0+cu128",
+      "transformers": "4.52.4",
+      "flash-attn": "2.8.3",
+      "triton": "3.4.0",
+      "huggingface-hub": "0.35.3"
+    },
+    "args": {
+      "models": "models.lock.json"
+    },
+    "upstream": {
+      "checked_date": "2026-10-17",
+      "c2c": {
+        "url": "https://github.com/thu-nics/C2C",
+        "commit": "bdb932aa63637959074a9a6fd59992a4d0d9ad22"
+      },
+      "nano_vllm": {
+        "url": "https://github.com/GeeeekExplorer/nano-vllm",
+        "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8"
+      },
+      "sender": "Qwen/Qwen3-4B",
+      "receiver": "Qwen/Qwen3-0.6B",
+      "fuser": "nics-efc/C2C_Fuser",
+      "fuser_subdir": "qwen3_0.6b+qwen3_4b_Fuser/final"
+    },
+    "models": {
+      "receiver": {
+        "repo": "Qwen/Qwen3-0.6B",
+        "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+        "path": "/root/autodl-tmp/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca"
+      },
+      "sender": {
+        "repo": "Qwen/Qwen3-4B",
+        "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+        "path": "/root/autodl-tmp/huggingface/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c"
+      },
+      "fuser": {
+        "repo": "nics-efc/C2C_Fuser",
+        "revision": "f01fc3258b305e280e04c7238f4f2cf31b7dc70d",
+        "path": "/root/autodl-tmp/huggingface/hub/models--nics-efc--C2C_Fuser/snapshots/f01fc3258b305e280e04c7238f4f2cf31b7dc70d/qwen3_0.6b+qwen3_4b_Fuser/final"
+      }
+    }
+  },
+  "note": "36 authored functional cases, strict normalized answer scoring. Code-output reasoning only; no generated code execution. Not a public benchmark.",
+  "complete": true
+}

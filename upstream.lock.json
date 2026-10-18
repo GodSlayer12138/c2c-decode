@@ -1,0 +1,9 @@
+{
+  "checked_date": "2026-10-17",
+  "c2c": {"url": "https://github.com/thu-nics/C2C", "commit": "bdb932aa63637959074a9a6fd59992a4d0d9ad22"},
+  "nano_vllm": {"url": "https://github.com/GeeeekExplorer/nano-vllm", "commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8"},
+  "sender": "Qwen/Qwen3-4B",
+  "receiver": "Qwen/Qwen3-0.6B",
+  "fuser": "nics-efc/C2C_Fuser",
+  "fuser_subdir": "qwen3_0.6b+qwen3_4b_Fuser/final"
+}

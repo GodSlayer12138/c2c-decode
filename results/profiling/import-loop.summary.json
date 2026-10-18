@@ -1,0 +1,52 @@
+{
+  "profiled_region_ms": 136.902259,
+  "gpu_events": 3608,
+  "kernels": 3592,
+  "observed_gpu_active_ms": 11.2063251953125,
+  "observed_gpu_active_fraction": 0.08185639358450982,
+  "largest_observed_gpu_gap_ms": 0.25502783203125,
+  "top_kernels": [
+    {
+      "name": "void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1} const&)::{lambda(int)#1})",
+      "count": 3584,
+      "gpu_us": 11146.681999999995
+    },
+    {
+      "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<c10::BFloat16, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4> >(at::native::ReduceOp<c10::BFloat16, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4>)",
+      "count": 8,
+      "gpu_us": 46.916000000000004
+    }
+  ],
+  "runtime": [
+    {
+      "name": "cudaLaunchKernel",
+      "count": 3592,
+      "host_us": 16467.456999999966
+    },
+    {
+      "name": "cudaMemcpyAsync",
+      "count": 8,
+      "host_us": 96.83200000000001
+    },
+    {
+      "name": "cudaMemsetAsync",
+      "count": 8,
+      "host_us": 55.205000000000005
+    },
+    {
+      "name": "cudaStreamSynchronize",
+      "count": 8,
+      "host_us": 37.521
+    },
+    {
+      "name": "cudaDeviceSynchronize",
+      "count": 2,
+      "host_us": 18.429
+    },
+    {
+      "name": "cudaEventQuery",
+      "count": 1,
+      "host_us": 3.354
+    }
+  ]
+}

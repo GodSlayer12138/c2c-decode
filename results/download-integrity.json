@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "weights": [
+    {
+      "role": "receiver",
+      "file": "model.safetensors",
+      "bytes": 1503300328,
+      "sha256": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b"
+    },
+    {
+      "role": "sender",
+      "file": "model-00001-of-00003.safetensors",
+      "bytes": 3957900840,
+      "sha256": "328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223"
+    },
+    {
+      "role": "sender",
+      "file": "model-00002-of-00003.safetensors",
+      "bytes": 3987450520,
+      "sha256": "6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5"
+    },
+    {
+      "role": "sender",
+      "file": "model-00003-of-00003.safetensors",
+      "bytes": 99630640,
+      "sha256": "e4bf436957184f4eeb86a80e9db394503f1f56446b2e6b7edeac5b81470f4ca1"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_0.pt",
+      "bytes": 37815239,
+      "sha256": "f60f3b3e5fd27a96cee8d9d30de8bfdd2a88bc041ae70ade8cb9e29c06d5e4a8"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_1.pt",
+      "bytes": 37815239,
+      "sha256": "508cecd38c2bc90679345143545698d9bc8e9395656e708e0d1e9bccd289f772"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_10.pt",
+      "bytes": 37815276,
+      "sha256": "cd213bfaf675983799856c3de852458f9406f8d611f9f6bf59c8f4c30d4aadb3"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_11.pt",
+      "bytes": 37815276,
+      "sha256": "868fe1db0bb391efd4f363aa5a377f24f7d4fb2d8fae7d74fdf45d5ef6915e90"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_12.pt",
+      "bytes": 37815276,
+      "sha256": "abe371ec5638e14e305d01a02c264676c619aa6175722f90202ee2685f4ed787"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_13.pt",
+      "bytes": 37815276,
+      "sha256": "0f3c1d4a3fa21db927dcb05e9134c4cb4886799b21669d5093e86d4888489bc3"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_14.pt",
+      "bytes": 37815276,
+      "sha256": "54a0eed347c4f79ac96ad9bd018df3324f7decc1c9967e4a4dba1f4e6b645316"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_15.pt",
+      "bytes": 37815276,
+      "sha256": "4b07e6bd209c7f26dd7b95c2c91a50e7dadc7405502eed9d8ebfb5243f0234ec"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_16.pt",
+      "bytes": 37815276,
+      "sha256": "d295f7559b62db4b2db7687e9659b43938c1e8c7293afc621611b6f1c31c4b0c"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_17.pt",
+      "bytes": 37815276,
+      "sha256": "3509c5e35cd9e5a061c25ae681eb5709168edf24a9d653c4a1787640000365db"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_18.pt",
+      "bytes": 37815276,
+      "sha256": "6ce2382cf9a80455a3df52030c59eb9f26dcb76a12dcfa723e8588bad8a59e24"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_19.pt",
+      "bytes": 37815276,
+      "sha256": "6b312020a732ba6d100f6f0f45603d787344d653f539ae963660772f27f31cb2"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_2.pt",
+      "bytes": 37815239,
+      "sha256": "45133679e48816abe8aa583b88bb7d0489a7bc67a8ce265eb8a51a72fb083119"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_20.pt",
+      "bytes": 37815276,
+      "sha256": "97d82822b13295aade5bf45d1aa4c17e7a72b6a4cbaddbac47d0cc1b4c607698"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_21.pt",
+      "bytes": 37815276,
+      "sha256": "c2abe61c562fd887f4f8bf07439e327bfb7664e3e74568a90912a08863673287"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_22.pt",
+      "bytes": 37815276,
+      "sha256": "f980b0dbe6d9bc9e814754884ad422d6359154ed84d7bf08ce1cb6b825733aab"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_23.pt",
+      "bytes": 37815276,
+      "sha256": "a38d12e15c25084753292a3e678e35e5d37a245132a809584f70f2d43fb46114"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_24.pt",
+      "bytes": 37815276,
+      "sha256": "d7e66fe4212ba168cd945e70b841ef4ed3b47a643ad310bfa967257bb1f4dd35"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_25.pt",
+      "bytes": 37815276,
+      "sha256": "7576103b34f044c15ab80a84eaed324eb1d58b60d5ac3118b3c8d411276de3ab"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_26.pt",
+      "bytes": 37815276,
+      "sha256": "be5af42614fc204caf43135e7f7ee44c467020454872310a5b8a84e0e0f1cf67"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_27.pt",
+      "bytes": 37815276,
+      "sha256": "1a029c00e59bb39114a4b1b6489e897bc8a3511ca854430a61e69ed5a9cf17e3"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_3.pt",
+      "bytes": 37815239,
+      "sha256": "52b7c8789a5368a2797262fd8aef2d473480914f3d0dae98291494f7f62a107c"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_4.pt",
+      "bytes": 37815239,
+      "sha256": "395a8d41ca5e528fc1d5e54e0efe0a59023572c83a55932df39b23135db7068f"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_5.pt",
+      "bytes": 37815239,
+      "sha256": "4dc895a79d698aceaa4d368385baa54919572496a58c644c8dc6cc62d0322647"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_6.pt",
+      "bytes": 37815239,
+      "sha256": "ecb86d9389296ec32127edee1ae92ad52ffa8a051b1b830c951f45e04b9f4286"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_7.pt",
+      "bytes": 37815239,
+      "sha256": "d3c16e10a36cd760f7e66b3dd3db5b26111794e24ef5c6524ead45a3ed8f022c"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_8.pt",
+      "bytes": 37815239,
+      "sha256": "9ae89f748988e71a56835ac2a22e0f4163ae73542f411875e345ad1731731eca"
+    },
+    {
+      "role": "fuser",
+      "file": "projector_9.pt",
+      "bytes": 37815239,
+      "sha256": "6ad72fbcd795338575fc4888ae21920236d95657201d430be0296c97dba52554"
+    }
+  ]
+}

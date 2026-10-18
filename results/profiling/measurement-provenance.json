@@ -1,0 +1,25 @@
+{
+  "note": "Historical measurement-time hashes of retained modules, before nano-only packaging refactor. Not a certification of the current source. Raw nano measurements remain unchanged; summary-source-sha256.json describes report-generation sources.",
+  "hashes": {
+    "src/c2c_decode/__init__.py": "125cabed97d08daa7b4322474b30ae9f024aea663d77a49d03db611b6d966a30",
+    "src/c2c_decode/bridge.py": "23f08e6cbdc8d3eedf82787c84e299d0ab288157d92d3dc317fecaa69e6727a2",
+    "src/c2c_decode/cli.py": "58d61d267facac96a5bddc4eec2439585068b8411d8022a18cdc2f28a24f0e48",
+    "src/c2c_decode/efficiency.py": "9b0985031cfa9d6c267a560c0767df688c5a622ca1be97efc7987905a72df345",
+    "src/c2c_decode/evaluate.py": "70c9e9b551cd7eb43ae2af2dc0bae2d0fdac1f7047f723c9ac11fa5ea0340905",
+    "src/c2c_decode/paged.py": "bea9ed6f5809f7b5b3db4b70ec9d67c4442f88fdfadb27940685e5d69d1be9da",
+    "src/c2c_decode/paths.py": "043234a7dc451fd12a4b00bfabb651fb049a08e5762e397b87d4c746632cb1ba",
+    "src/c2c_decode/reference.py": "d11310fa7b69fd5e223b5c6312609ecec6706942f55e19549309c998bcdbd71c",
+    "src/c2c_decode/scheduler.py": "44bab37cf74076b3763232e1c5ff379891180b89883acf93157452422f39b240",
+    "scripts/bootstrap_upstream.py": "fd1da223e72ce8cc72cac8704c9152b47da85435d673431c7a5043a79d5fc5ee",
+    "scripts/download_models.py": "8055eb676514d921cfcf0f49d46bef6d6762abf1d05310a25e815bdc491c6650",
+    "scripts/profile_experiments.py": "def8c6df1592e008bba6437585881174ce61b98f099d6222d1d8e1472bfcff76",
+    "scripts/profile_runtime.py": "2ca1a0960fc5b91a3f3a4215db235cd1087a1cbb6beafb4e31c214f7154a8910",
+    "scripts/profiling_utils.py": "ce7eacf864601fd8beed58b0dd4baefb8a6a4e9af34dff0ce1fbed36d826aeff",
+    "scripts/summarize.py": "5f46dbfb62f0850b187b8e1fc7abaed06b4b1180feaeeae9bafabf2967f7ec1a",
+    "scripts/summarize_profiling.py": "1f178efe8b12ce936c6e67dd14f3de8b8aeb27d0f317201a227274a3b06093b0",
+    "scripts/verify_downloads.py": "a3d878a6d6955319a4435b35a825f7954f4be1509113979622c646df5c867697",
+    "tests/test_paged_gpu.py": "f6f4746cd4c2586deeb24f2e585664a9ee5a49b86410afb110166e81e24fbd7b",
+    "tests/test_scheduler.py": "faeedec6cb4e5a534dbb4e8c422f2c58363a6d60ebe17a9016d562025baedcd5",
+    "tests/test_validation_cli.py": "027ee72bf6815742f570c367c711306657017dcd82190e77cd161a6af3d83085"
+  }
+}
